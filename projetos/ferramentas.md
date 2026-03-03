@@ -42,18 +42,12 @@ Componentes compartilhados e integrações de baixo nível.
 | **lib-api-grupoa** | Cliente .NET para APIs GrupoA-MaisCampus | Marcelo |
 | **lib-dotnet-utils** | Utilitários para projetos dotnet c# | Marcelo |
 
-## Plataformas e BPM
-Processos e customizações em sistemas terceiros.
-
-| Repositório / Ferramenta | Descrição | Ponto Focal |
-| :--- | :--- | :--- |
-| **fluig** | Implementações sobre a plataforma Fluig | Theo |
-
-## Plataformas Externas e Low-Code
-Desenvolvimentos realizados fora do ambiente de repositórios Git padrão.
+## Plataformas e Terceiros
+Soluções de terceiros, BPM, Low-Code e desenvolvimentos fora do Git.
 
 | Ferramenta | Descrição | Plataforma | Ponto Focal |
 | :--- | :--- | :--- | :--- |
+| **Fluig** | Implementações e processos sobre a plataforma Fluig | BPM / Low-Code | Theo |
 | **Power BI** | Desenvolvimento de dashboards e relatórios gerenciais | BI / Analytics | Marcelo/Thiago |
 | **Portal Uniarp** | Site institucional da Uniarp (WordPress) | CMS / Web | Andre |
 | **Bubble.io** | Gestão de frotas e monitoria (No-Code) | Web / No-Code | Thiago |
