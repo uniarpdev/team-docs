@@ -19,7 +19,7 @@ Gerenciamos um ecossistema diversificado que inclui:
 - **Bibliotecas e Integrações:** APIs de baixo nível (LDAP, Totvs, GrupoA).
 
 ### Observações de Infraestrutura
-- **GLPI:** A manutenção e atualização do sistema de chamados (GLPI) é realizada atualmente pelo Grupo de Desenvolvimento, embora tecnicamente pertença ao escopo de Infraestrutura/Sistemas.
+- **GLPI:** A manutenção, atualização e **customização** do sistema de chamados (GLPI) são realizadas atualmente pelo Grupo de Desenvolvimento sob a supervisão do Supervisor (Marcelo), embora a infraestrutura base pertença idealmente ao escopo de Infraestrutura/Sistemas.
 
 👉 [Ver mapeamento de projetos e pontos focais](projetos/ferramentas.md)
 

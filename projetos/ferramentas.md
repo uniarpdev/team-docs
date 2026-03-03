@@ -51,6 +51,7 @@ Soluções de terceiros, BPM, Low-Code e desenvolvimentos fora do Git.
 | **Power BI** | Desenvolvimento de dashboards e relatórios gerenciais | BI / Analytics | Marcelo/Thiago |
 | **Portal Uniarp** | Site institucional da Uniarp (WordPress) | CMS / Web | Andre |
 | **Bubble.io** | Gestão de frotas e monitoria (No-Code) | Web / No-Code | Thiago |
+| **GLPI** | Sistema de chamados (Manutenção e Customização) | ITSM / PHP | Marcelo |
 
 ## Outros Projetos Relevantes
 | Repositório | Descrição | Ponto Focal |
