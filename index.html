@@ -12,12 +12,35 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/style.min.css" title="docsify-darklight-theme" type="text/css" />
   
   <style>
-    /* Ajuste para a logo */
+    /* Estilo para Logo | Nome do Projeto */
+    .sidebar .app-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--theme-color, #42b983);
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    
+    .sidebar .app-name img {
+      height: 30px; /* Logo um pouco menor para caber o texto ao lado */
+      width: auto;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    
+    .sidebar .app-name::after {
+      content: '| Uniarp Dev';
+      margin-left: 5px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      white-space: nowrap;
+    }
+
+    /* Esconde a logo padrão do docsify para usarmos o nosso layout customizado */
     .sidebar .sidebar-nav img {
-      max-width: 140px;
-      height: auto;
-      margin: 15px auto;
-      display: block;
+      display: none;
     }
     
     /* Estilos customizados para o alternador de tema */
