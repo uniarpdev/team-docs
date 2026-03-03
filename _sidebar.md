@@ -2,3 +2,4 @@
 - [👥 Equipe e Responsabilidades](integracao/equipe.md)
 - [🛠️ Mapa de Ferramentas](projetos/ferramentas.md)
 - [📋 Processo de Atendimento](processos/fluxo-atendimento.md)
+- [🚀 Projetos Futuros](processos/projetos-futuros.md)

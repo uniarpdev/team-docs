@@ -24,7 +24,8 @@ Gerenciamos um ecossistema diversificado que inclui:
 👉 [Ver mapeamento de projetos e pontos focais](projetos/ferramentas.md)
 
 ### Processos de Trabalho
-- 📋 **[Fluxo de Atendimento e Suporte (GLPI)](processos/fluxo-atendimento.md):** Definição de níveis de suporte e matriz RACI para gestão de chamados.
+- 📋 **[Fluxo de Atendimento e Suporte](processos/fluxo-atendimento.md):** Definição de níveis de suporte e matriz RACI.
+- 🚀 **[Projetos Futuros e Evolução](processos/projetos-futuros.md):** Iniciativas de melhoria, metodologias ágeis e novas tecnologias.
 
 ---
 
