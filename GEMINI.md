@@ -2,6 +2,14 @@
 
 Este repositório é o centro de documentação oficial do time de desenvolvimento da Uniarp. Ele contém guias, processos, arquiteturas e informações de integração para todos os projetos da organização.
 
+## Contexto Organizacional
+O setor de tecnologia da Uniarp está dividido em três grandes grupos:
+1.  **Rede e Infraestrutura:** Possui gestão própria.
+2.  **Suporte a Sistemas:** Sob a gestão de Carlos Alberto Zorzo.
+3.  **Desenvolvimento:** Também sob a gestão de Carlos Alberto Zorzo.
+
+**Foco deste Repositório:** Este repositório é dedicado exclusivamente ao **Grupo de Desenvolvimento**, documentando as práticas e projetos específicos desse time.
+
 ## Mandatos Principais
 - **Idioma:** Toda a documentação deve ser escrita em **Português (PT-BR)**.
 - **Estrutura de Pastas:**
