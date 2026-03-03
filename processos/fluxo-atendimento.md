@@ -1,44 +1,46 @@
-# Fluxo de Atendimento e Suporte (GLPI)
+# Fluxo de Atendimento e Governança de Demandas
 
-Este documento define o processo de gestão de chamados para o **Grupo de Desenvolvimento**, visando otimizar o tempo da equipe e garantir que os analistas foquem em evolução de software e integrações.
+Este documento define o processo de gestão de suporte e solicitações para o **Grupo de Desenvolvimento**, visando otimizar a produtividade e garantir o foco em projetos estratégicos.
 
-## Estrutura de Atendimento em Níveis
-
-Para proteger a produtividade do time de desenvolvimento, o fluxo de suporte deve seguir a hierarquia de níveis abaixo:
+## Canais de Entrada e Triagem
+As solicitações chegam predominantemente via **E-mail**, sendo convertidas em tickets para acompanhamento. Para proteger o tempo de execução técnica, o fluxo segue a hierarquia de níveis abaixo:
 
 | Nível | Grupo Responsável | Papel Principal |
 | :--- | :--- | :--- |
-| **N1** | **Suporte Geral / Help Desk** | Atendimento inicial, reset de senhas e orientações de uso básico. |
-| **N2** | **Suporte a Sistemas** | Triagem técnica, validação de dados no RM/LDAP e identificação de falhas de processo. |
-| **N3** | **Desenvolvimento** | Correção de bugs no código, manutenção de APIs e novas integrações (RM -> LDAP -> Portal -> GLPI). |
+| **N1** | **Suporte Geral / Help Desk** | Atendimento inicial, reset de senhas e orientações básicas. |
+| **N2** | **Suporte a Sistemas** | **Triagem técnica obrigatória**. Validação de dados no RM/LDAP e identificação de falhas de processo. |
+| **N3** | **Desenvolvimento** | Resolução de bugs de código, falhas de integração e novas funcionalidades. |
 
-## Fluxo de Escalonação
+---
 
-1.  **Abertura:** O usuário abre o chamado no GLPI selecionando a categoria do sistema.
-2.  **Triagem (N2):** O grupo de **Suporte a Sistemas** realiza a primeira análise técnica.
-    -   *Se for erro de cadastro ou processo:* O N2 resolve e encerra o chamado.
-    -   *Se for falha na integração ou erro de código:* O N2 escala o chamado para o grupo **Desenvolvimento**.
-3.  **Resolução (N3):** O analista de desenvolvimento atua na correção técnica e devolve o chamado para o N2 validar com o usuário.
+## 🛡️ Diretrizes de Governança e Comunicação
+
+Para manter a integridade do planejamento e a eficiência do time:
+
+### 1. Centralização de Demandas Externas
+Todas as solicitações originadas por outros grupos (Rede, Infraestrutura, Sistemas) ou gestões externas **devem ser obrigatoriamente direcionadas ao Supervisor de Desenvolvimento (Marcelo)**. 
+-   **Regra de Ouro:** Não deve haver solicitações diretas aos analistas desenvolvedores sem o conhecimento e priorização da supervisão.
+-   **Impacto:** O acionamento direto desestabiliza o planejamento semanal, gera retrabalho e fragmenta o foco da equipe.
+
+### 2. Triagem Prévia (Filtro N2)
+O time de desenvolvimento só assume uma demanda após a confirmação pelo N2 (Suporte a Sistemas) de que o problema reside no código ou na lógica de integração, e não em inconsistências de dados no sistema de origem (RM/Totvs).
+
+### 3. Registro de Atividades
+Mesmo as demandas urgentes ou solicitações de gestores devem ser registradas formalmente no canal de atendimento para garantir a rastreabilidade e a transparência do trabalho realizado.
+
+---
 
 ## Matriz de Responsabilidades (RACI)
 
 | Atividade | N1 (Geral) | N2 (Sistemas) | N3 (Dev) |
 | :--- | :---: | :---: | :---: |
-| Monitorar fila do GLPI | **R** | **A** | **C** |
-| Reset de senha LDAP/Portal | **R** | **A** | **I** |
-| Validar dados no RM/Totvs | **C** | **R** | **I** |
-| Corrigir bugs em sistemas internos | **I** | **C** | **R** |
-| Manutenção do Servidor GLPI | **I** | **C** | **R*** |
-| Customização de Plugins GLPI | **I** | **I** | **R** |
+| Monitorar Canais de Entrada | **R** | **A** | **C** |
+| Validar Inconsistência de Dados | **C** | **R** | **I** |
+| Analisar Bug de Código / Integração | **I** | **C** | **R** |
+| Autorizar Novas Funcionalidades | **I** | **I** | **A (Marcelo)** |
+| Manutenção de Servidores de Aplicação | **I** | **C** | **R*** |
 
 *Legenda: **R** (Responsável), **A** (Aprova/Presta Contas), **C** (Consultado), **I** (Informado).*
-*\*Nota: A manutenção do servidor GLPI é feita pelo Dev atualmente, mas o objetivo é migrar para Infra.*
-
-## Diretrizes de Atendimento para o Dev
-
--   **Não atender chamados sem triagem:** O time de desenvolvimento não deve assumir chamados que não passaram pelo N2 (Suporte a Sistemas).
--   **Documentação:** Sempre que um erro de integração for resolvido, a solução deve ser documentada na **Base de Conhecimento** do GLPI para que o N2 possa resolver futuramente sem escalonar.
--   **Ponto Focal:** O Supervisor (Marcelo) valida a necessidade de desenvolvimento antes do analista iniciar a codificação de uma nova funcionalidade solicitada via chamado.
 
 ---
-*Este processo visa reduzir a carga reativa do Grupo de Desenvolvimento, permitindo foco em projetos estratégicos.*
+*Este processo formaliza a atuação do Grupo de Desenvolvimento como um time de engenharia, e não apenas suporte reativo.*
