@@ -7,17 +7,26 @@
   <meta name="description" content="Documentação oficial do Grupo de Desenvolvimento Uniarp">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
-  <!-- Temas -->
+  <!-- Temas CSS -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" title="light">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/style.min.css" title="docsify-darklight-theme" type="text/css" />
   
   <style>
-    /* Ajuste para a logo não ficar gigante na sidebar */
+    /* Ajuste para a logo */
     .sidebar .sidebar-nav img {
-      width: 150px;
+      max-width: 140px;
       height: auto;
-      margin: 10px auto;
+      margin: 15px auto;
       display: block;
+    }
+    
+    /* Estilos customizados para o alternador de tema */
+    #docsify-darklight-theme {
+      right: 20px;
+      bottom: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
     }
   </style>
 </head>
@@ -26,7 +35,6 @@
   <script>
     window.$docsify = {
       name: 'Uniarp Dev',
-      // Removida a barra inicial para funcionar no subdiretório do GitHub Pages
       logo: 'assets/logo/logo.png',
       repo: 'uniarpdev/team-docs',
       loadSidebar: true,
@@ -34,41 +42,23 @@
         '/.*/_sidebar.md': '/_sidebar.md'
       },
       subMaxLevel: 2,
-      // Configuração do tema Dark/Light
+      // Configuração do Tema Escuro
       darklightTheme: {
-        siteFont : "PT Sans",
-        defaultTheme : 'system',
-        codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
-        bodyFontSize : '15px',
+        siteFont: "PT Sans",
+        defaultTheme: 'system',
+        codeFontFamily: 'Roboto Mono, Monaco, courier, monospace',
+        bodyFontSize: '15px',
         dark: {
           accent: '#42b983',
-          toogleBackground : '#ffffff',
-          background: '#091a28',
+          toogleBackground: '#ffffff',
+          background: '#1c2022',
           textColor: '#b4b4b4',
-          codeTextColor : '#ffffff',
-          codeBackgroundColor : '#0e2233',
-          borderColor : '#0d2538',
-          blockQuoteColor : '#858585',
-          highlightColor : '#d22778',
-          sidebarSublink : '#b4b4b4',
-          codeTypeColor : '#ffffff',
-          coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
-          toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
         },
         light: {
           accent: '#42b983',
-          toogleBackground : '#091a28',
+          toogleBackground: '#091a28',
           background: '#ffffff',
           textColor: '#34495e',
-          codeTextColor : '#525252',
-          codeBackgroundColor : '#f8f8f8',
-          borderColor : 'rgba(0,0,0,.07)',
-          blockQuoteColor : '#858585',
-          highlightColor : '#d22778',
-          sidebarSublink : '#b4b4b4',
-          codeTypeColor : '#091a28',
-          coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
-          toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
         }
       },
       search: {
@@ -80,11 +70,14 @@
       }
     }
   </script>
+  
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Plugin Dark Mode -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
-  <!-- Outros Plugins -->
+  
+  <!-- Plugin Dark/Light Theme -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/index.min.js"></script>
+  
+  <!-- Plugins Adicionais -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
