@@ -15,8 +15,11 @@ O grupo é liderado por **Carlos Alberto Zorzo** (Gestor) e **Marcelo Wollmann F
 Gerenciamos um ecossistema diversificado que inclui:
 
 - **Aplicações Internas:** Portais Web e Ferramentas Console/Desktop (ex: Portal MVC, Integrador Acadêmico).
-- **Plataformas Externas:** Soluções em Power BI, WordPress e Bubble.io.
+- **Plataformas e Terceiros:** Soluções em Power BI, WordPress, Bubble.io e Fluig (BPM).
 - **Bibliotecas e Integrações:** APIs de baixo nível (LDAP, Totvs, GrupoA).
+
+### Observações de Infraestrutura
+- **GLPI:** A manutenção e atualização do sistema de chamados (GLPI) é realizada atualmente pelo Grupo de Desenvolvimento, embora tecnicamente pertença ao escopo de Infraestrutura/Sistemas.
 
 👉 [Ver mapeamento de projetos e pontos focais](projetos/ferramentas.md)
 
