@@ -31,6 +31,7 @@ Projetos que ainda não foram iniciados ou são ambientes de teste.
 | **app-gestao-frotas** | Controle de solicitações de veículos | Planejamento | |
 | **app-portal-api** | API de processos internos sistemas uniarp | API | Marcelo |
 | **app-portal-web** | Interface web para consumo API de integrações | Web | Marcelo |
+| **app-valorizza** | Integração com a plataforma Valorizza | Planejamento | Marcelo |
 
 ## Bibliotecas (Libs)
 Componentes compartilhados e integrações de baixo nível.
@@ -40,6 +41,7 @@ Componentes compartilhados e integrações de baixo nível.
 | **lib-api-ldap** | API para integração com LDAP | Marcelo |
 | **lib-api-totvs** | Biblioteca de classes para APIs da Totvs | Marcelo |
 | **lib-api-grupoa** | Cliente .NET para APIs GrupoA-MaisCampus | Marcelo |
+| **lib-api-valorizza** | Biblioteca de integração com Valorizza | Marcelo |
 | **lib-dotnet-utils** | Utilitários para projetos dotnet c# | Marcelo |
 
 ## Plataformas e Terceiros
@@ -52,6 +54,8 @@ Soluções de terceiros, BPM, Low-Code e desenvolvimentos fora do Git.
 | **Portal Uniarp** | Site institucional da Uniarp (WordPress) | CMS / Web | Andre |
 | **Bubble.io** | Gestão de frotas e monitoria (No-Code) | Web / No-Code | Thiago |
 | **GLPI** | Sistema de chamados (Manutenção e Customização) | ITSM / PHP | Marcelo |
+| **Integração Avalia** | Integração de notas (Projeto fora do Git) | .NET Framework | Marcelo |
+| **Minha Biblioteca**| Integração com acervo digital (Plano de migração para API) | PHP | Marcelo |
 
 ## Outros Projetos Relevantes
 | Repositório | Descrição | Ponto Focal |
