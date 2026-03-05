@@ -40,7 +40,29 @@ O GLPI continua sendo a ferramenta oficial para incidentes e solicitações de u
 
 ---
 
-## 4. Papéis e Responsabilidades por Nível
+## 4. Estrutura Operacional (Planner Desenvolvimento TI 2026)
+
+Para manter a organização visual e facilitar a filtragem de dados, o painel principal utiliza os seguintes padrões:
+
+### Buckets (Divisão Lógica)
+*   **📥 Triagem / Backlog Anual:** Demandas priorizadas para o ciclo, aguardando início.
+*   **🌐 Apps (Web/Desktop):** Manutenção e novas features de aplicações (Ex: `app-portal`, `app-bolsas`).
+*   **📦 Libs & APIs:** Desenvolvimento de bibliotecas e APIs (`lib-api-totvs`, `lib-api-valorizza`).
+*   **⚙️ TOTVS RM (Pro-Code):** Fórmulas Visuais, SQLs Complexos e lógica interna do ERP.
+*   **🔌 Integrações:** Projetos envolvendo sistemas de terceiros (Ex: Valorizza, Avalia).
+*   **📋 Gestão & Processos:** Atividades de documentação, cultura e ritos ágeis.
+
+### Tags (Categorização e Filtro)
+*   **🔴 Bug / Crítico:** Erros em produção que exigem ação imediata.
+*   **🟡 Melhoria:** Evolução incremental de sistemas existentes.
+*   **🟢 Novo Recurso:** Implementação de funcionalidades inéditas.
+*   **🔵 Integração:** Tarefas que envolvem comunicação entre sistemas distintos.
+*   **🟠 Aguardando N2/Gestão:** Bloqueio por definição funcional ou aprovação superior.
+*   **🟣 Infraestrutura:** Dependência técnica do setor de Rede/Servidores.
+
+---
+
+## 5. Papéis e Responsabilidades por Nível
 
 Para garantir a fluidez do processo, a gestão dos Planners é dividida por nível de governança:
 
