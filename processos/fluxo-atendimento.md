@@ -41,6 +41,7 @@ Mesmo as demandas urgentes ou solicitações de gestores devem ser registradas f
 | Manutenção de Servidores de Aplicação | **I** | **C** | **R*** |
 
 *Legenda: **R** (Responsável), **A** (Aprova/Presta Contas), **C** (Consultado), **I** (Informado).*
+***(\*) Dependência de Infraestrutura:** A manutenção técnica da aplicação é do Desenvolvimento (N3), mas depende da estabilidade e recursos (VM, SO, Rede) providos pelo setor de Infraestrutura.*
 
 ---
 *Este processo formaliza a atuação do Grupo de Desenvolvimento como um time de engenharia, e não apenas suporte reativo.*
