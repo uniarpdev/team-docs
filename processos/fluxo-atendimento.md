@@ -30,6 +30,23 @@ Mesmo as demandas urgentes ou solicitações de gestores devem ser registradas f
 
 ---
 
+## 🔍 Fluxo de Diagnóstico: Funcional vs. Técnico
+
+Para demandas que envolvem a otimização ou implantação de módulos do ERP (ex: Módulo de Contratos, Gestão de Frotas), seguimos o fluxo de maturidade abaixo:
+
+1.  **Diagnóstico Funcional (N2 - Suporte a Sistemas):**
+    *   **Ação:** Analisar se o problema é falta de treinamento, parametrização incorreta ou se o processo de negócio não se encaixa no padrão nativo da TOTVS.
+    *   **Resultado esperado:** Um relatório ou parecer indicando se o RM atende nativamente ou se há um "gap" (buraco) de funcionalidade.
+
+2.  **Definição Estratégica (Supervisão - Marcelo):**
+    *   **Ação:** Validar o parecer do N2. Decidir se a solução será uma **mudança de processo no RM** (Funcional) ou se exigirá **desenvolvimento customizado** (Técnico, ex: Integração com Fluig).
+
+3.  **Desenvolvimento de Solução (N3 - Dev):**
+    *   **Ação:** Somente após a definição do item anterior, o N3 assume a demanda para criar integrações, Fórmulas Visuais complexas ou processos no Fluig.
+    *   **Objetivo:** O desenvolvedor trabalha com requisitos claros e não em "tentativa e erro" funcional do ERP.
+
+---
+
 ## Matriz de Responsabilidades (RACI)
 
 | Atividade | N1 (Geral) | N2 (Sistemas) | N3 (Dev) |
