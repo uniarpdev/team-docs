@@ -51,8 +51,10 @@ Para facilitar a rastreabilidade, os buckets do Planner espelham as categorias d
 *   **💻 Aplicações (Apps):** Desenvolvimento e manutenção de sistemas próprios (Ex: `app-portal`, `app-bolsas`).
 *   **📚 Bibliotecas & APIs (Libs):** Evolução de componentes compartilhados e conectores (Ex: `lib-api-totvs`).
 *   **🏢 Ecossistema TOTVS RM:** Customizações de baixo nível no ERP (Fórmulas Visuais, SQLs, Metadados).
-*   **☁️ Plataformas & Terceiros:** Soluções Low-Code/No-Code (Fluig, Bubble, **Power BI**) e integrações específicas (Avalia, Valorizza).
+*   **☁️ Plataformas & Terceiros:** Soluções Low-Code/No-Code (Fluig, Bubble, Power BI) e integrações específicas (Avalia, Valorizza).
+    *   *Nota: Projetos transversais (que envolvem múltiplas áreas ou ferramentas externas) devem ser centralizados no bucket da plataforma de maior impacto ou origem da demanda.*
 *   **📖 Documentação & Processos:** Manutenção do `team-docs`, revisão de ritos e cultura de engenharia.
+
 
 ### Tags (Categorização e Filtro)
 *   **🔴 Bug / Crítico:** Erros em produção que exigem ação imediata.
