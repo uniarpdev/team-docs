@@ -44,13 +44,15 @@ O GLPI continua sendo a ferramenta oficial para incidentes e solicitações de u
 
 Para manter a organização visual e facilitar a filtragem de dados, o painel principal utiliza os seguintes padrões:
 
-### Buckets (Divisão Lógica)
-*   **📥 Triagem / Backlog Anual:** Demandas priorizadas para o ciclo, aguardando início.
-*   **🌐 Apps (Web/Desktop):** Manutenção e novas features de aplicações (Ex: `app-portal`, `app-bolsas`).
-*   **📦 Libs & APIs:** Desenvolvimento de bibliotecas e APIs (`lib-api-totvs`, `lib-api-valorizza`).
-*   **⚙️ TOTVS RM (Pro-Code):** Fórmulas Visuais, SQLs Complexos e lógica interna do ERP.
-*   **🔌 Integrações:** Projetos envolvendo sistemas de terceiros (Ex: Valorizza, Avalia).
-*   **📋 Gestão & Processos:** Atividades de documentação, cultura e ritos ágeis.
+### Buckets (Alinhamento com Mapa de Ferramentas)
+Para facilitar a rastreabilidade, os buckets do Planner espelham as categorias do nosso inventário de software:
+
+*   **📥 Triagem / Backlog:** Demandas em fase de análise ou aguardando priorização.
+*   **💻 Aplicações (Apps):** Desenvolvimento e manutenção de sistemas próprios (Ex: `app-portal`, `app-bolsas`).
+*   **📚 Bibliotecas & APIs (Libs):** Evolução de componentes compartilhados e conectores (Ex: `lib-api-totvs`).
+*   **🏢 Ecossistema TOTVS RM:** Customizações de baixo nível no ERP (Fórmulas Visuais, SQLs, Metadados).
+*   **☁️ Plataformas & Terceiros:** Soluções Low-Code/No-Code (Fluig, Bubble) e integrações específicas (Avalia, Valorizza).
+*   **📖 Documentação & Processos:** Manutenção do `team-docs`, revisão de ritos e cultura de engenharia.
 
 ### Tags (Categorização e Filtro)
 *   **🔴 Bug / Crítico:** Erros em produção que exigem ação imediata.
