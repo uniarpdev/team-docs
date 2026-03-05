@@ -40,7 +40,19 @@ O GLPI continua sendo a ferramenta oficial para incidentes e solicitações de u
 
 ---
 
-## 4. Ganhos Estratégicos
+## 4. Papéis e Responsabilidades por Nível
+
+Para garantir a fluidez do processo, a gestão dos Planners é dividida por nível de governança:
+
+| Nível | Responsável | Atribuições Principais |
+| :--- | :--- | :--- |
+| **N1: Backlog** | **Supervisor (Marcelo)** | Triagem de novas demandas (Excel/E-mail/Gestão) e priorização estratégica. |
+| **N2: Execução Global** | **Supervisor / Analistas** | Definição das tarefas ativas da Sprint/Mês e acompanhamento de prazos anuais. |
+| **N3: Projetos (PRJ)** | **Analistas (Pontos Focais)** | Detalhamento técnico, check-lists operacionais e atualização diária do progresso. |
+
+---
+
+## 5. Ganhos Estratégicos
 
 *   **Limpeza Visual:** Foco total no que tem prazo, mantendo o que não é prioridade "escondido" no Backlog.
 *   **Mensuração de Resultados:** Facilita a prestação de contas anual e o planejamento do ciclo seguinte.
