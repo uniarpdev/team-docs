@@ -22,16 +22,18 @@ Sistemas em produção ou desenvolvimento constante.
 | **app-extrato-notas** | Emissão de extratos (Colégio de Aplicação) | Desktop | Thiago |
 | **app-aviso-ferias** | Sistema para envio de aviso de férias | Desktop | Thiago |
 | **app-portaria** | Sistema de solicitação de crachás | Web/Desktop | Marcelo |
+| **Integração Avalia** | Importação e gestão de notas (Avalia) | .NET Framework | Marcelo |
+| **Minha Biblioteca**| Integração com acervo digital | PHP | Marcelo |
 
 ## Projetos em Planejamento ou Testes
 Projetos que ainda não foram iniciados ou são ambientes de teste.
 
 | Repositório | Descrição | Status | Ponto Focal |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- : | :--- | :--- |
 | **app-gestao-frotas** | Controle de solicitações de veículos | Planejamento | |
 | **app-portal-api** | API de processos internos sistemas uniarp | API | Marcelo |
 | **app-portal-web** | Interface web para consumo API de integrações | Web | Marcelo |
-| **app-valorizza** | Integração com a plataforma Valorizza | Planejamento | Marcelo |
+| **app-valorizza** | Módulo de integração Valorizza (Integrado ao Portal) | Planejamento | Marcelo |
 
 ## Bibliotecas (Libs)
 Componentes compartilhados e integrações de baixo nível.
@@ -54,10 +56,9 @@ Soluções de terceiros, BPM, Low-Code e desenvolvimentos fora do Git.
 | **Portal Uniarp** | Site institucional da Uniarp (WordPress) | CMS / Web | Andre |
 | **Bubble.io** | Gestão de frotas e monitoria (No-Code) | Web / No-Code | Thiago |
 | **GLPI** | Sistema de chamados (Manutenção e Customização) | ITSM / PHP | Marcelo |
-| **Integração Avalia** | Integração de notas (Projeto fora do Git) | .NET Framework | Marcelo |
-| **Minha Biblioteca**| Integração com acervo digital (Plano de migração para API) | PHP | Marcelo |
 
-## Outros Projetos Relevantes
+## Customizações e Ferramentas Internas (TOTVS RM)
+
 | Repositório | Descrição | Ponto Focal |
 | :--- | :--- | :--- |
 | **uniarpTasks** | Scripts de integração e tarefas agendadas | Marcelo |
