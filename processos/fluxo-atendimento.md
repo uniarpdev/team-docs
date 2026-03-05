@@ -59,7 +59,7 @@ Para demandas que envolvem a otimização ou implantação de módulos do ERP (e
 | Atualização de Plataformas (Fluig, etc.) | **I** | **I** | R* |
 
 *Legenda: **R** (Responsável), **A** (Aprova/Presta Contas), **C** (Consultado), **I** (Informado).*
-*(*) Dependência de Infraestrutura: A manutenção técnica e atualização são do Desenvolvimento (N3), mas dependem da estabilidade e recursos (VM, Snapshot, SO, Rede) providos pelo setor de Infraestrutura.*
+(*) Dependência de Infraestrutura: A manutenção técnica e atualização são do Desenvolvimento (N3), mas dependem da estabilidade e recursos (VM, Snapshot, SO, Rede) providos pelo setor de Infraestrutura.
 
 ---
 **Este processo formaliza a atuação do Grupo de Desenvolvimento como um time de engenharia, e não apenas suporte reativo.*
