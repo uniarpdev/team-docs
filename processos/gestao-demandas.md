@@ -60,7 +60,7 @@ Para facilitar a rastreabilidade, os buckets do Planner espelham as categorias d
 *   **🟢 Novo Recurso:** Implementação de funcionalidades inéditas.
 *   **🔵 Integração:** Tarefas que envolvem comunicação entre sistemas distintos.
 *   **🟠 Aguardando N2/Gestão:** Bloqueio por definição funcional ou aprovação superior.
-*   **🟣 Infraestrutura:** Dependência técnica do setor de Rede/Servidores.
+*   **🟣 Infraestrutura:** Dependência técnica de Rede/Servidores ou **Atualizações de Plataforma** (Ex: Update do Fluig).
 
 ---
 
