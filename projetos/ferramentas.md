@@ -63,5 +63,16 @@ Soluções de terceiros, BPM, Low-Code e desenvolvimentos fora do Git.
 | **uniarpTasks** | Scripts de integração e tarefas agendadas | Marcelo |
 | **team-docs** | Documentação do time de desenvolvimento | Marcelo |
 
+## Customizações e Ferramentas Internas (TOTVS RM)
+Componentes de desenvolvimento "low-code" e lógica de negócio dentro do ERP.
+
+| Ferramenta | Descrição | Responsabilidade Técnica |
+| :--- | :--- | :--- |
+| **Fórmulas Visuais** | Gatilhos e automações de processos no RM | Desenvolvimento (Regra/Arquitetura) |
+| **Consultas SQL** | Views e Scripts para Relatórios e Cubos | Desenvolvimento (Performance/Lógica) |
+| **Integração ETL** | Fluxos de extração e carga de dados (Conceitos) | Desenvolvimento |
+| **Metadados** | Criação de tabelas e campos customizados | Desenvolvimento/Suporte |
+| **Gerador de Saídas** | Layouts de integração bancária e fiscal | Suporte (Parametrização) |
+
 ---
 *Nota: Para novos projetos, siga o padrão de nomenclatura `app-`, `lib-` ou `bpm-`.*
