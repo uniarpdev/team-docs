@@ -46,8 +46,9 @@ Para garantir a fluidez do processo, a gestão dos Planners é dividida por nív
 
 | Nível | Responsável | Atribuições Principais |
 | :--- | :--- | :--- |
-| **N1: Backlog** | **Supervisor (Marcelo)** | Triagem de novas demandas (Excel/E-mail/Gestão) e priorização estratégica. |
-| **N2: Execução Global** | **Supervisor / Analistas** | Definição das tarefas ativas da Sprint/Mês e acompanhamento de prazos anuais. |
+| **Estratégico** | **Gestor (Carlos)** | Arbitragem de prioridades macro e validação dos resultados anuais. |
+| **N1: Backlog** | **Supervisor (Marcelo)** | Triagem de novas demandas (Excel/E-mail/Gestão) e priorização técnica. |
+| **N2: Execução Global** | **Supervisor / Analistas** | Gestão das tarefas ativas da Sprint/Mês e acompanhamento de prazos anuais. |
 | **N3: Projetos (PRJ)** | **Analistas (Pontos Focais)** | Detalhamento técnico, check-lists operacionais e atualização diária do progresso. |
 
 ---
