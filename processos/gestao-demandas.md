@@ -41,6 +41,7 @@ Para manter a consistência entre todos os níveis (N1, N2 e N3), utilizamos os 
 
 ### Tags (Categorização e Filtro)
 As tags são idênticas em todos os Planners para permitir visão unificada:
+*   **🎯 Radar Gestão:** Demandas estratégicas priorizadas pela Direção da Uniarp.
 *   **🔴 Bug / Crítico:** Erros em produção que exigem ação imediata.
 *   **🟡 Melhoria:** Evolução incremental de sistemas existentes.
 *   **🟢 Novo Recurso:** Implementação de funcionalidades inéditas.
