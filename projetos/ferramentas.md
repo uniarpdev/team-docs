@@ -2,7 +2,7 @@
 
 Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integrando repositórios internos, plataformas de terceiros e fluxos de integração.
 
-> **Nota Estratégica:** Atualmente, todas as integrações operam sob o [Portal de Ensino (MVC)](https://github.com/uniarpdev/app-portal-mvc). Existe um planejamento para a separação desta estrutura em dois produtos distintos: **Portal de Ensino** e **Portal de Integrações**.
+> **Nota Estratégica:** A maioria das integrações atuais opera sob o [Portal de Ensino (MVC)](https://github.com/uniarpdev/app-portal-mvc), com exceção da **Integração Avalia** (.NET Framework) e da **Minha Biblioteca** (PHP), que residem em ambientes separados. Existe um planejamento para a unificação futura no **Portal de Integrações**.
 
 ## 1. Gestão de Identidade e Acesso (IAM)
 *Controle de autenticação, usuários e segurança institucional.*
@@ -36,9 +36,10 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | :--- | :--- | :--- | :--- |
 | **TOTVS RM** | ERP (C# / SQL) | Sistema Core (Educacional, Financeiro, RH, etc.) | **Rolff** |
 | **Integrador Acad.** | [`app-academico`](https://github.com/uniarpdev/app-academico) | Automação de bolsas e processos RM (Console) | Marcelo |
-| **Plataforma A (LXP)**| Grupo A | Ambiente Virtual de Aprendizagem (LXP/LTI) | (Terceiro) |
-| **Biblioteca Digital**| `Minha Biblioteca` | Integração de usuários RM -> Grupo A | Marcelo |
-| **Módulo Valorizza** | [`app-valorizza`](https://github.com/uniarpdev/app-valorizza) | Integração com a plataforma Valorizza | Marcelo |
+| **Notas (Manager)** | [`app-portal-mvc`](https://github.com/uniarpdev/app-portal-mvc) | Sincronismo LXP -> RM (Nova integração Grupo A) | Marcelo |
+| **Notas (Avalia)** | .NET Framework | Integração antiga Avalia -> RM (Projeto Separado) | Marcelo |
+| **Biblioteca Digital**| `Minha Biblioteca` (PHP) | Integração usuários RM -> Grupo A (Projeto Separado) | Marcelo |
+| **Módulo Valorizza** | [`app-valorizza`](https://github.com/uniarpdev/app-valorizza) | Integração Valorizza (Reside no Portal de Ensino) | Marcelo |
 | **Custom RM (Low)** | Fórmulas Visuais | Lógica interna e gatilhos de eventos do ERP | Marcelo |
 
 ## 4. Processos Administrativos e Backoffice
