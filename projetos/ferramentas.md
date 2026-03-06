@@ -26,8 +26,8 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Gestão de Frotas** | `Bubble.io` | Controle de veículos | Thiago |
 | **Site Institucional** | WordPress | Site público uniarp.edu.br | Maia |
 
-### 1.2. Funcionalidades - Portal de Ensino (MVC)
-*Segmentação granular dos serviços disponíveis no portal unificado (Branch: unificacao).*
+### 1.2. Funcionalidades e Integrações - Portal de Ensino (MVC)
+*Detalhamento dos módulos e fluxos de dados residentes no portal unificado (Branch: unificacao).*
 
 #### A. Módulo Acadêmico (Edu & Aluno)
 | Funcionalidade | Descrição | Público |
@@ -38,12 +38,12 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Gestão Acadêmica** | Consulta de notas, faltas, horários e documentos acadêmicos. | Aluno |
 | **Painel Coord.** | Visualização e gestão de professores e turmas vinculadas. | Coordenador |
 
-#### B. Módulo de Integrações (Middleware)
-| Funcionalidade | Descrição | Status |
-| :--- | :--- | :--- |
-| **Gateway AVA** | Ponte de autenticação e sincronismo para ambientes LXP/Moodle. | Ativo |
-| **Sync de Notas** | Motor de integração para retorno de avaliações externas ao TOTVS RM. | Ativo |
-| **Módulo Valorizza**| Integração de dados de carreira e práticas acadêmicas. | Em Unificação |
+#### B. Integrações Residentes (Middleware)
+| Produto | Tecnologia | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **GrupoA (Manager)**| Integração Interna | Sincronismo LXP -> RM (Notas e Frequência) | Marcelo |
+| **Módulo Valorizza**| Integração Interna | Sincronismo de dados acadêmicos e práticas | Marcelo |
+| **Gateway AVA** | Autenticação LTI | Ponte de acesso para ambientes LXP/Moodle | Marcelo |
 
 #### C. Módulo de Suporte e Identidade
 | Funcionalidade | Descrição | Público |
@@ -52,22 +52,19 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Central de RH** | Consultas administrativas e suporte ao colaborador. | Funcionário |
 | **Gestão de Perfil** | Controle granular de acesso baseado em papéis (RBAC). | Sistema |
 
-### 1.3. Ecossistema de Integrações Internas
-
-*Fluxos de sincronismo e comunicação desenvolvidos pela equipe.*
+### 1.3. Ecossistema de Integrações Externas (Outros Projetos)
+*Fluxos de sincronismo que operam fora do Portal de Ensino.*
 
 | Produto | Tecnologia | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
-| **GrupoA (Manager)**| [`app-portal-mvc`](https://github.com/uniarpdev/app-portal-mvc) | Sincronismo LXP -> RM (Portal) | Marcelo |
 | **GrupoA (Avalia)** | .NET Framework | Integração antiga Avalia -> RM | Marcelo |
 | **Biblioteca Dig.** | `Minha Biblioteca` (PHP) | Sincronismo de usuários RM -> Grupo A | Marcelo |
-| **Módulo Valorizza**| Integração (Portal) | Integração Valorizza (Reside no Portal) | Marcelo |
 | **Sincronismo AD** | Integração RM -> AD | Manutenção de usuários no Active Directory | Marcelo |
 | **Custom RM (Low)** | Fórmulas Visuais / SQL | Lógica interna e gatilhos do ERP | Marcelo |
 | **Processos BPM** | Fluig (Processos) | Fluxos de trabalho customizados (Ex: SAE, Compras) | Theo |
-| **Dashboards BI** | Power BI (Dashboards) | Painéis estratégicos desenvolvidos internamente | Thiago |
+| **Dashboards BI** | Power BI (Dashboards) | Painéis estratégicos (Dados de múltiplos sistemas) | Thiago |
 
-### 1.3. Bibliotecas, APIs e Helpers (Infraestrutura de Código)
+### 1.4. Bibliotecas, APIs e Helpers (Infraestrutura de Código)
 | Helper | Repositório | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
 | **API TOTVS** | [`lib-api-totvs`](https://github.com/uniarpdev/lib-api-totvs) | Cliente de integração com APIs TOTVS | Marcelo |
@@ -109,6 +106,7 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Assinatura Digit.**| TAE Totvs Assinatura | Assinatura eletrônica de documentos | A definir |
 | **Atendimento Whats** | WorkChat | Automação via WhatsApp | A definir |
 | **Gestão Carreira** | Valorizza | Plataforma de gestão de carreira | A definir |
+| **Site Institucional** | WordPress | Site público uniarp.edu.br | Maia |
 | **CRM / Marketing** | Rubeus | Gestão de relacionamento e captação | David |
 | **Ponto (Kairos)** | Kairos (Dimep) | Coleta de registros de ponto | Dionathan |
 | **GED / Diplomas** | DocXpress/Diplomax| Digitalização e gestão de diplomas | Eduardo |
