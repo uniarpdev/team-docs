@@ -26,33 +26,31 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Gestão de Frotas** | `Bubble.io` | Controle de veículos | Thiago |
 | **Site Institucional** | WordPress | Site público uniarp.edu.br | Maia |
 
-### 1.2. Funcionalidades e Integrações - Portal de Ensino (MVC)
-*Detalhamento dos módulos e fluxos de dados residentes no portal unificado (Branch: unificacao).*
+### 1.2. Módulos e Funcionalidades - Portal de Ensino (MVC)
+*Análise técnica das capacidades operacionais do portal unificado.*
 
-#### A. Módulo Acadêmico (Edu & Aluno)
-| Funcionalidade | Descrição | Público |
-| :--- | :--- | :--- |
-| **Check-in Aula** | Registro de presença via portal com validação de geolocalização/horário. | Aluno |
-| **Análise Curricular**| Emissão de relatórios de evolução no curso e matriz curricular. | Aluno |
-| **Aproveitamento** | Fluxo digital para solicitação e acompanhamento de aproveitamento de estudos. | Aluno |
-| **Ativ. Complementar**| Gerenciamento de horas, submissão de certificados e validação de atividades. | Aluno/Coord. |
-| **Turma/Disciplina**| Gestão de diário: Planos de Aula/Ensino, Calendário, Horários e Matrículas. | Aluno/Prof. |
-| **Gestão Acadêmica** | Consulta de notas, faltas e documentos acadêmicos. | Aluno |
-| **Painel Coord.** | Visualização e gestão de professores e turmas vinculadas. | Coordenador |
+#### A. Gestão Acadêmica Core (Educacional)
+| Subárea | Funcionalidades Detalhadas |
+| :--- | :--- |
+| **Turma/Disciplina** | Gestão de diário de classe: Planos de Aula, Planos de Ensino, Calendários Acadêmicos, Horários de Professores e Frequência. |
+| **Gestão de Salas** | Controle de ocupação física, distribuição de turmas por bloco/sala e sistema de reservas. |
+| **Módulo Aluno** | Identificação institucional, emissão de relatórios acadêmicos, consulta de matriz curricular e situação de matrícula. |
+| **CPA & ENADE** | Publicação de resultados de avaliações institucionais e painel de acompanhamento ENADE. |
 
-#### B. Integrações Residentes (Middleware)
-| Produto | Tecnologia | Descrição | Ponto Focal |
-| :--- | :--- | :--- | :--- |
-| **GrupoA (Manager)**| Integração Interna | Sincronismo LXP -> RM (Notas e Frequência) | Marcelo |
-| **Módulo Valorizza**| Integração Interna | Sincronismo de dados acadêmicos e práticas | Marcelo |
-| **Gateway AVA** | Autenticação LTI | Ponte de acesso para ambientes LXP/Moodle | Marcelo |
+#### B. Processos Acadêmicos Digitais (Workflows)
+| Subárea | Funcionalidades Detalhadas |
+| :--- | :--- |
+| **Aproveitamento** | Workflow completo de solicitação de aproveitamento de estudos, configuração de status e regras de notificação automática. |
+| **Orientação Metod.** | Gestão de TCCs/Estágios: Agendamento de bancas, envio de arquivos por curso/disciplina e correções online orientador/aluno. |
+| **Ativ. Complementar**| Sistema de protocolo de horas: Submissão de comprovantes, validação pelo coordenador e extrato de carga horária. |
+| **Check-in Aula** | Registro de presença digital via dispositivo móvel com validação de proximidade e tempo. |
 
-#### C. Módulo de Suporte e Identidade
-| Funcionalidade | Descrição | Público |
-| :--- | :--- | :--- |
-| **Self-Service ID** | Reset de senha e atualização cadastral LDAP integrada ao portal. | Geral |
-| **Central de RH** | Consultas administrativas e suporte ao colaborador. | Funcionário |
-| **Gestão de Perfil** | Controle granular de acesso baseado em papéis (RBAC). | Sistema |
+#### C. Integrações e Middleware (Residentes)
+| Recurso | Tecnologia / Descrição |
+| :--- | :--- |
+| **GrupoA (Manager)**| Integração Interna: Sincronismo bidirecional LXP -> RM (Notas e Frequência). |
+| **Módulo Valorizza**| Integração Interna: Sincronismo de dados para gestão de carreiras e práticas jurídicas (NPJ). |
+| **Gateway AVA** | Autenticação LTI: Single Sign-On (SSO) para acesso aos ambientes de aprendizagem Grupo A e Moodle. |
 
 ### 1.3. Ecossistema de Integrações Externas (Outros Projetos)
 *Fluxos de sincronismo que operam fora do Portal de Ensino.*
@@ -91,6 +89,7 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Ponto Eletrônico** | RM Chronus | Gestão de jornada de trabalho | Dionathan |
 | **Estoque / Compras** | RM Nucleus | Suprimentos e faturamento | Maria |
 | **Biblioteca** | RM Biblios | Gestão de acervo físico | David |
+| **Segurança / Saúde** | RM Agilis / Bonum | Atendimento e gestão patrimonial | David |
 
 ### 2.2. Plataformas Satélites e Serviços
 | Produto | Tecnologia | Descrição | Ponto Focal |
