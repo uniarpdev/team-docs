@@ -1,74 +1,78 @@
-# Catálogo de Sistemas e Produtos (Visão Global)
+# Catálogo de Sistemas e Produtos (Visão Global 2025/2026)
 
-Este documento mapeia os ativos de tecnologia da Uniarp por **Produto/Sistema**, consolidando repositórios, bibliotecas, plataformas de terceiros e customizações internas.
+Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integrando repositórios internos, plataformas de terceiros e fluxos de integração.
 
 ## 1. Gestão de Identidade e Acesso (IAM)
-*Sistemas que controlam a autenticação e autorização institucional.*
-
-| Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
-| :--- | :--- | :--- | :--- |
-| **Identidade (Adm)** | `app-ldap` | Gerenciamento administrativo de usuários LDAP (Desktop) | Marcelo |
-| **Identidade (Web)** | `app-ldap` / `lib-api-ldap` | Interface de autosserviço para usuários (Web) | Marcelo |
-| **Portaria (Gestão)** | `app-portaria` | Monitoramento e gestão de acesso (Desktop) | Marcelo |
-| **Crachás (Web)** | `app-portaria` | Solicitação de crachás por alunos/professores (Web) | Marcelo |
-
-## 2. Portais e Experiência do Aluno
-*Interfaces de interação direta com o corpo discente e público externo.*
-
-| Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
-| :--- | :--- | :--- | :--- |
-| **Portal de Ensino** | `app-portal-mvc` | Portal intranet principal da Uniarp | Marcelo |
-| **Carteirinha (Aluno)**| `app-carteirinha` | Exibição digital de carteirinhas estudantis (Web) | Thiago |
-| **Carteirinha (Adm)** | `app-carteirinha` | Impressão e gestão administrativa (Desktop) | Thiago |
-| **Extrato de Notas** | `app-extrato-notas` | Emissão de extratos (Colégio de Aplicação) | Thiago |
-| **Site Institucional** | WordPress (`Portal Uniarp`) | Site público uniarp.edu.br | Andre |
-
-## 3. Gestão Acadêmica e Integrações ERP (TOTVS RM)
-*Núcleo de processamento de dados e automações do ecossistema acadêmico.*
-
-| Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
-| :--- | :--- | :--- | :--- |
-| **Integrador Acadêmico**| `app-academico` / `lib-api-totvs` | Automação e integração direta com RM | Marcelo |
-| **Integração de Notas** | `Integração Avalia` / `lib-api-grupoa` | Sincronismo de notas (Avalia/Grupo A) | Marcelo |
-| **Biblioteca Digital** | `Minha Biblioteca` | Integração com acervo digital (PHP) | Marcelo |
-| **Módulo Valorizza** | `app-valorizza` / `lib-api-valorizza`| Integração com a plataforma Valorizza | Marcelo |
-| **Custom RM (Low)** | Fórmulas Visuais, SQL, ETL | Lógica interna e gatilhos do ERP | Marcelo |
-
-## 4. Processos Administrativos e Backoffice
-*Sistemas de suporte interno e automação de fluxos de trabalho.*
-
-| Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
-| :--- | :--- | :--- | :--- |
-| **Gestão de Bolsas** | `app-bolsas` | Painel administrativo e concessão (Desktop) | Thiago |
-| **Inscrição de Bolsas**| `app-bolsas` | Formulário de inscrição para alunos (Web) | Thiago |
-| **Pagamentos Med** | `app-pagmed` | Gestão de pagamentos curso de Medicina (Desktop) | Thiago |
-| **RH e Férias** | `app-aviso-ferias` | Emissão de avisos de férias (Desktop) | Thiago |
-| **Gestão de Frotas** | `app-gestao-frotas` / `Bubble.io` | Controle de veículos e solicitações | Thiago |
-| **Processos BPM** | Plataforma `Fluig` | Fluxos de trabalho e aprovações digitais | Theo |
-| **Gestão de TI** | `GLPI` / `team-docs` | Chamados, Inventário e Documentação | Marcelo |
-
-## 5. Analytics e Inteligência de Dados (BI)
-*Extração e visualização de dados estratégicos.*
+*Controle de autenticação, usuários e segurança institucional.*
 
 | Produto | Tecnologia | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
-| **Dashboards Uniarp** | `Power BI` | Painéis gerenciais e monitoramento | Marcelo/Thiago |
+| **Identidade (Adm)** | `app-ldap` | Gestão administrativa de usuários LDAP (Desktop) | Marcelo |
+| **Identidade (Web)** | `app-ldap` / `lib-api-ldap` | Interface de autosserviço e sincronismo AD (Web) | Marcelo |
+| **Portaria (Gestão)** | `app-portaria` | Gestão de acesso e integração RM (Desktop) | Marcelo |
+| **Crachás (Web)** | `app-portaria` | Solicitação de crachás por alunos/professores (Web) | Marcelo |
+| **Suricato** | Telemática | Gestão de segurança física e controle de acesso | (Terceiro) |
 
-## 6. Infraestrutura de Código e Componentes (Libs)
-*Arquiteturas de suporte que atendem a múltiplos produtos.*
+## 2. Portais e Experiência do Aluno
+*Ecossistema de interfaces e interação com o público acadêmico.*
 
-| Componente | Repositório | Descrição | Ponto Focal |
+| Produto | Tecnologia | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
-| **API de Serviços** | `app-portal-api` / `app-portal-web` | Camada de abstração e web-services | Marcelo |
-| **Dotnet Utils** | `lib-dotnet-utils` | Utilitários e helpers para projetos C# | Marcelo |
-| **Scripts & Tasks** | `uniarpTasks` | Automações rápidas e tarefas agendadas | Marcelo |
+| **Portal de Ensino** | `app-portal-mvc` | Portal intranet principal da Uniarp | Marcelo |
+| **Portal Educacional**| Totvs (RM) | Interface nativa RM para professores e alunos | (Terceiro) |
+| **Minha Uniarp (App)**| Totvs (Mobile) | Aplicativo mobile para informações acadêmicas | (Terceiro) |
+| **Carteirinha (Aluno)**| `app-carteirinha` | Exibição digital de carteirinhas (Web) | Thiago |
+| **Carteirinha (Adm)** | `app-carteirinha` | Gestão e lotes de produção (Desktop) | Thiago |
+| **Extrato de Notas** | `app-extrato-notas` | Consulta de notas (Colégio de Aplicação) | Felipe |
+| **Monitoria** | `Monitoria` | Gestão de agendamento de monitorias | Thiago |
+| **Site Institucional** | WordPress | Site público uniarp.edu.br | Andre |
+| **Portal de Eventos** | PHP/Web | SEDEPEX (Submissão/Avaliação) e Eventos Teatro | Andre |
+| **Portais Diversos** | PHP/Web | Egresso, Jogos, Acervo Digital e LGPD (Parcial) | Andre |
 
-## 7. Candidatos a Arquivamento / Desativação
+## 3. Gestão Acadêmica e Integrações (Core ERP)
+*Sistemas de processamento acadêmico e fluxos de integração de notas/matrículas.*
+
+| Produto | Tecnologia | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **TOTVS RM** | ERP (C# / SQL) | Sistema Core (Educacional, Financeiro, RH, etc.) | Marcelo |
+| **Integrador Acad.** | `app-academico` | Automação de bolsas e processos RM (Console) | Marcelo |
+| **Plataforma A (LXP)**| Grupo A | Ambiente Virtual de Aprendizagem (LXP/LTI) | (Terceiro) |
+| **Integração Notas** | `lib-api-grupoa` | Sincronismo LXP -> RM e Avalia -> RM | Marcelo |
+| **Biblioteca Digital**| `Minha Biblioteca` | Integração de usuários RM -> Grupo A | Marcelo |
+| **Módulo Valorizza** | `app-valorizza` | Integração com a plataforma Valorizza | Marcelo |
+| **Custom RM (Low)** | Fórmulas Visuais | Lógica interna e gatilhos de eventos do ERP | Marcelo |
+
+## 4. Processos Administrativos e Backoffice
+*Automação de fluxos internos, RH e atendimento.*
+
+| Produto | Tecnologia | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **Gestão de Bolsas** | `app-bolsas` | Inscrição (Web) e Gestão de Bolsas (Desktop) | Thiago |
+| **Pagamentos Med** | `app-pagmed` | Gestão de pagamentos curso de Medicina | Thiago |
+| **RH e Férias** | `app-aviso-ferias` | Emissão de avisos e recibos (Meu RH Totvs) | Marcelo |
+| **Gestão de Frotas** | `app-gestao-frotas` | Controle de veículos (Bubble/Interno) | Thiago |
+| **Processos BPM** | `Fluig` | Gestão de workflows e aprovações digitais | Theo |
+| **Gestão de TI** | `GLPI` | Gerenciamento de chamados e ativos | Marcelo |
+| **GED / Diplomas** | `DocXpress` | Digitalização e gestão de diplomas digitais | (Terceiro) |
+| **CRM / Marketing** | `Rubeus` | Gestão de captação e relacionamento | (Terceiro) |
+| **Ponto / RH** | `Kairos` (Dimep) | Coleta de registros de ponto eletrônico | (Terceiro) |
+
+## 5. Analytics e Automação de Escritório
+*Inteligência de dados e ferramentas de produtividade.*
+
+| Produto | Tecnologia | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **Dashboards BI** | `Power BI` | Painéis estratégicos (RM/Fluig/Bolsas) | Marcelo/Thiago |
+| **Office 365** | Power Automate | Automações de formulários e fluxos internos | Dionathan |
+| **Impressão** | `SafePrint` | Gestão de cotas e filas de impressão | (Terceiro) |
+
+## 6. Candidatos a Arquivamento / Desativação
 *Sistemas legados ou duplicados aguardando análise para descontinuação.*
 
-| Produto | Repositório | Motivo |
+| Produto | Tecnologia | Motivo |
 | :--- | :--- | :--- |
-| *(Em análise)* | | |
+| **uniarpApps** | Diversas | Repositório monólito sendo fatiado em apps próprios |
+| **Moodle** | EaD | Sendo substituído/complementado pelo LXP |
 
 ---
-*Nota: Para novos sistemas, siga o padrão de nomenclatura `app-`, `lib-` ou `bpm-`.*
+*Nota: Este catálogo reflete o levantamento oficial de 2025 consolidado com o planejamento de 2026.*
