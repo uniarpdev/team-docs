@@ -11,6 +11,22 @@ Este documento detalha os membros e as responsabilidades exclusivas do **Grupo d
 | theouniarp | Theo Xavier Martins  | Analista Desenvolvedor |
 | thiagosonegouniarp | Thiago Rodrigo Sonego | Analista Desenvolvedor |
 
+## Escala de Trabalho
+
+| Membro | Horário de Expediente | Observações |
+| :--- | :--- | :--- |
+| **Marcelo** | 08:00 - 11:15 / 13:00 - 17:45 | Segunda a Sexta |
+| **Theo** | 08:00 - 12:00 / 13:00 - 17:00 | Segunda a Sexta |
+| **Andre (Maia)** | 13:00 - 17:00 | Segunda a Sexta |
+| **Thiago** | *Ver detalhamento abaixo* | Escala híbrida/noturna |
+| **Dionathan** | A definir | Em transição (Suporte a Sistemas) |
+| **Carlos (Zorzo)** | Horários variados | Consultar disponibilidade |
+
+### Detalhamento: Thiago Sonego
+- **Segunda e Quarta:** 09:00 às 12:00 e 13:00 às 18:00.
+- **Terça e Quinta:** 13:00 às 18:00 e 19:00 às 22:00.
+- **Sexta-feira:** Escala rotativa (alterna semanalmente entre o horário matutino e o noturno).
+
 ## Responsabilidades por Cargo
 
 ### Gestor de Tecnologia
