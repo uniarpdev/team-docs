@@ -22,6 +22,7 @@ Sistemas em produção ou desenvolvimento constante.
 | **app-extrato-notas** | Emissão de extratos (Colégio de Aplicação) | Desktop | Thiago |
 | **app-aviso-ferias** | Sistema para envio de aviso de férias | Desktop | Thiago |
 | **app-portaria** | Sistema de solicitação de crachás | Web/Desktop | Marcelo |
+| **app-identidade-ldap** | Aplicativo para gestão de usuários LDAP (Migrando de `uniarpApps`) | Web/Desktop | Marcelo |
 | **Integração Avalia** | Importação e gestão de notas (Avalia) | .NET Framework | Marcelo |
 | **Minha Biblioteca**| Integração com acervo digital | PHP | Marcelo |
 
