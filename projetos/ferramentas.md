@@ -13,6 +13,7 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Identidade (Web)** | [`app-ldap`](https://github.com/uniarpdev/app-ldap) | Interno | Interface de autosserviço LDAP (Web) | Marcelo |
 | **Portaria (Gestão)** | [`app-portaria`](https://github.com/uniarpdev/app-portaria) | Interno | Gestão de acesso e integração RM (Desktop) | Marcelo |
 | **Crachás (Web)** | [`app-portaria`](https://github.com/uniarpdev/app-portaria) | Interno | Solicitação de crachás (Web) | Marcelo |
+| **Sincronismo AD** | Integração RM -> AD | Interno | Manutenção de usuários no Active Directory | Marcelo |
 | **Suricato** | Telemática | Terceiro | Gestão de segurança física e acesso | Marcelo |
 
 ## 2. Portais e Experiência do Aluno
@@ -27,6 +28,8 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Carteirinha (Adm)** | [`app-carteirinha`](https://github.com/uniarpdev/app-carteirinha) | Interno | Gestão e lotes de produção (Desktop) | Thiago |
 | **Extrato de Notas** | [`app-extrato-notas`](https://github.com/uniarpdev/app-extrato-notas) | Interno | Consulta de notas (Colégio de Aplicação) | Thiago |
 | **Monitoria** | `Bubble.io` | Terceiro | Gestão de agendamento de monitorias | Thiago |
+| **Atendimento Whats** | WorkChat | Terceiro | Automação via WhatsApp | A definir |
+| **Gestão Carreira** | WorkAlove | Terceiro | Plataforma de gestão de carreira | A definir |
 | **Site Institucional** | WordPress | Terceiro | Site público uniarp.edu.br | Andre |
 | **Portal de Eventos** | PHP / Web | Interno | SEDEPEX e Eventos Teatro | Andre |
 | **Portais Diversos** | PHP / Web | Interno | Egresso, Jogos, Acervo e LGPD | Andre |
@@ -41,8 +44,10 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Notas (Manager)** | [`app-portal-mvc`](https://github.com/uniarpdev/app-portal-mvc) | Interno | Sincronismo LXP -> RM (Portal) | Marcelo |
 | **Notas (Avalia)** | .NET Framework | Interno | Integração antiga Avalia -> RM | Marcelo |
 | **Biblioteca Dig.** | `Minha Biblioteca` (PHP) | Interno | Integração usuários RM -> Grupo A | Marcelo |
-| **Módulo Valorizza** | [`app-valorizza`](https://github.com/uniarpdev/app-valorizza) | Interno | Integração Valorizza (Portal) | Marcelo |
+| **Módulo Valorizza** | Integração (Portal) | Interno | Integração Valorizza (Reside no Portal) | Marcelo |
+| **Módulo Orbita** | Integração RM | Terceiro | Geração de matrículas (Orbita -> RM) | A definir |
 | **Custom RM (Low)** | Fórmulas Visuais | Interno | Lógica interna e gatilhos do ERP | Marcelo |
+| **Assinatura Digit.**| Sign (Totvs) | Terceiro | Assinatura eletrônica de documentos | A definir |
 
 ## 4. Processos Administrativos e Backoffice
 *Automação de fluxos internos e suporte.*
@@ -53,9 +58,13 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Inscrição Bolsas** | [`app-bolsas`](https://github.com/uniarpdev/app-bolsas) | Interno | Portal de inscrição para alunos (Web) | Thiago |
 | **Pagamentos Med** | [`app-pagmed`](https://github.com/uniarpdev/app-pagmed) | Interno | Gestão de pagamentos curso Medicina | Thiago |
 | **RH e Férias** | [`app-aviso-ferias`](https://github.com/uniarpdev/app-aviso-ferias) | Interno | Emissão de avisos e recibos (Desktop) | Marcelo |
+| **Meu RH (App)** | Totvs (Mobile) | Terceiro | Gestão de comunicação com colaboradores | Rolff |
 | **Gestão de Frotas** | [`app-gestao-frotas`](https://github.com/uniarpdev/app-gestao-frotas) | Interno | Controle de veículos (Bubble/Interno) | Thiago |
 | **Processos BPM** | `Fluig` | Terceiro | Gestão de workflows e aprovações | Theo |
 | **Gestão de TI** | `GLPI` | Terceiro | Gerenciamento de chamados e ativos | Marcelo |
+| **CRM / Marketing** | Rubeus | Terceiro | Gestão de relacionamento e captação | A definir |
+| **Ponto / RH** | Kairos (Dimep) | Terceiro | Coleta de registros de ponto | A definir |
+| **GED / Diplomas** | DocXpress/Diplomax| Terceiro | Digitalização e gestão de diplomas | A definir |
 
 ## 5. Bibliotecas e Utilitários (Helpers)
 *Componentes de suporte e bibliotecas de classes compartilhadas.*
