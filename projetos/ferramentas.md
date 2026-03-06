@@ -1,80 +1,70 @@
-# Ferramentas e Pontos Focais
+# Catálogo de Sistemas e Produtos (Visão Global)
 
-Este documento mapeia os principais repositórios da organização **uniarpdev** e identifica os pontos focais para manutenção e suporte.
+Este documento mapeia os ativos de tecnologia da Uniarp por **Produto/Sistema**, consolidando repositórios, bibliotecas, plataformas de terceiros e customizações internas.
 
-## Definição de Papéis
+## 1. Gestão de Identidade e Acesso (IAM)
+*Sistemas que controlam a autenticação e autorização institucional.*
 
-Para todos os projetos listados abaixo, a estrutura de responsabilidade segue este padrão:
-
--   **Supervisão e Regras de Negócio (Marcelo):** Responsável pela definição da arquitetura, levantamento de requisitos junto às áreas solicitantes e validação das regras de negócio.
--   **Ponto Focal (Analista/Supervisor):** Responsável pela execução técnica, codificação, manutenção evolutiva e atendimento de chamados (GLPI) relacionados à ferramenta.
-
-## Aplicações Ativas (Apps)
-Sistemas em produção ou desenvolvimento constante.
-
-| Repositório | Descrição | Plataforma | Ponto Focal |
+| Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
-| **app-portal-mvc** | Portal intranet Uniarp | Web | Marcelo |
-| **app-academico** | Integrador Acadêmico: Automação TOTVS RM | Console | Marcelo |
-| **app-bolsas** | Gestão de bolsas da Uniarp | Web/Desktop | Thiago |
-| **app-carteirinha** | Gestão de carteirinhas estudantis | Web/Desktop | Thiago |
-| **app-pagmed** | Gestão de pagamentos (Curso de Medicina) | Desktop | Thiago |
-| **app-extrato-notas** | Emissão de extratos (Colégio de Aplicação) | Desktop | Thiago |
-| **app-aviso-ferias** | Sistema para envio de aviso de férias | Desktop | Thiago |
-| **app-portaria** | Sistema de solicitação de crachás | Web/Desktop | Marcelo |
-| **app-identidade-ldap** | Aplicativo para gestão de usuários LDAP (Migrando de `uniarpApps`) | Web/Desktop | Marcelo |
-| **Integração Avalia** | Importação e gestão de notas (Avalia) | .NET Framework | Marcelo |
-| **Minha Biblioteca**| Integração com acervo digital | PHP | Marcelo |
+| **Identidade Uniarp** | `app-identidade-ldap` / `lib-api-ldap` | Gestão de usuários e senhas LDAP | Marcelo |
+| **Portaria & Crachás**| `app-portaria` | Solicitação de crachás e controle de acesso | Marcelo |
 
-## Projetos em Planejamento ou Testes
-Projetos que ainda não foram iniciados ou são ambientes de teste.
+## 2. Portais e Experiência do Aluno
+*Interfaces de interação direta com o corpo discente e público externo.*
 
-| Repositório | Descrição | Status | Ponto Focal |
-| :--- | :--- : | :--- | :--- |
-| **app-gestao-frotas** | Controle de solicitações de veículos | Planejamento | |
-| **app-portal-api** | API de processos internos sistemas uniarp | API | Marcelo |
-| **app-portal-web** | Interface web para consumo API de integrações | Web | Marcelo |
-| **app-valorizza** | Módulo de integração Valorizza (Integrado ao Portal) | Planejamento | Marcelo |
-
-## Bibliotecas (Libs)
-Componentes compartilhados e integrações de baixo nível.
-
-| Repositório | Descrição | Ponto Focal |
-| :--- | :--- | :--- |
-| **lib-api-ldap** | API para integração com LDAP | Marcelo |
-| **lib-api-totvs** | Biblioteca de classes para APIs da Totvs | Marcelo |
-| **lib-api-grupoa** | Cliente .NET para APIs GrupoA-MaisCampus | Marcelo |
-| **lib-api-valorizza** | Biblioteca de integração com Valorizza | Marcelo |
-| **lib-dotnet-utils** | Utilitários para projetos dotnet c# | Marcelo |
-
-## Plataformas e Terceiros
-Soluções de terceiros, BPM, Low-Code e desenvolvimentos fora do Git.
-
-| Ferramenta | Descrição | Plataforma | Ponto Focal |
+| Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
-| **Fluig** | Implementações e processos sobre a plataforma Fluig | BPM / Low-Code | Theo |
-| **Power BI** | Desenvolvimento de dashboards e relatórios gerenciais | BI / Analytics | Marcelo/Thiago |
-| **Portal Uniarp** | Site institucional da Uniarp (WordPress) | CMS / Web | Andre |
-| **Bubble.io** | Gestão de frotas e monitoria (No-Code) | Web / No-Code | Thiago |
-| **GLPI** | Sistema de chamados (Manutenção e Customização) | ITSM / PHP | Marcelo |
+| **Portal do Aluno** | `app-portal-mvc` | Portal intranet principal da Uniarp | Marcelo |
+| **Carteirinha Digital**| `app-carteirinha` | Gestão e exibição de carteirinhas estudantis | Thiago |
+| **Extrato de Notas** | `app-extrato-notas` | Emissão de extratos (Colégio de Aplicação) | Thiago |
+| **Site Institucional** | WordPress (`Portal Uniarp`) | Site público uniarp.edu.br | Andre |
 
-## Customizações e Ferramentas Internas (TOTVS RM)
+## 3. Gestão Acadêmica e Integrações ERP (TOTVS RM)
+*Núcleo de processamento de dados e automações do ecossistema acadêmico.*
 
-| Repositório | Descrição | Ponto Focal |
+| Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **Integrador Acadêmico**| `app-academico` / `lib-api-totvs` | Automação e integração direta com RM | Marcelo |
+| **Integração de Notas** | `Integração Avalia` / `lib-api-grupoa` | Sincronismo de notas (Avalia/Grupo A) | Marcelo |
+| **Biblioteca Digital** | `Minha Biblioteca` | Integração com acervo digital (PHP) | Marcelo |
+| **Módulo Valorizza** | `app-valorizza` / `lib-api-valorizza`| Integração com a plataforma Valorizza | Marcelo |
+| **Custom RM (Low)** | Fórmulas Visuais, SQL, ETL | Lógica interna e gatilhos do ERP | Marcelo |
+
+## 4. Processos Administrativos e Backoffice
+*Sistemas de suporte interno e automação de fluxos de trabalho.*
+
+| Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **Gestão de Bolsas** | `app-bolsas` | Controle e concessão de bolsas estudantis | Thiago |
+| **Pagamentos Med** | `app-pagmed` | Gestão de pagamentos curso de Medicina | Thiago |
+| **RH e Férias** | `app-aviso-ferias` | Sistema de aviso de férias colaboradores | Thiago |
+| **Gestão de Frotas** | `app-gestao-frotas` / `Bubble.io` | Controle de veículos e solicitações | Thiago |
+| **Processos BPM** | Plataforma `Fluig` | Fluxos de trabalho e aprovações digitais | Theo |
+| **Gestão de TI** | `GLPI` / `team-docs` | Chamados, Inventário e Documentação | Marcelo |
+
+## 5. Analytics e Inteligência de Dados (BI)
+*Extração e visualização de dados estratégicos.*
+
+| Produto | Tecnologia | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **Dashboards Uniarp** | `Power BI` | Painéis gerenciais e monitoramento | Marcelo/Thiago |
+
+## 6. Infraestrutura de Código e Componentes (Libs)
+*Arquiteturas de suporte que atendem a múltiplos produtos.*
+
+| Componente | Repositório | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **API de Serviços** | `app-portal-api` / `app-portal-web` | Camada de abstração e web-services | Marcelo |
+| **Dotnet Utils** | `lib-dotnet-utils` | Utilitários e helpers para projetos C# | Marcelo |
+| **Scripts & Tasks** | `uniarpTasks` | Automações rápidas e tarefas agendadas | Marcelo |
+
+## 7. Candidatos a Arquivamento / Desativação
+*Sistemas legados ou duplicados aguardando análise para descontinuação.*
+
+| Produto | Repositório | Motivo |
 | :--- | :--- | :--- |
-| **uniarpTasks** | Scripts de integração e tarefas agendadas | Marcelo |
-| **team-docs** | Documentação do time de desenvolvimento | Marcelo |
-
-## Customizações e Ferramentas Internas (TOTVS RM)
-Componentes de desenvolvimento "low-code" e lógica de negócio dentro do ERP.
-
-| Ferramenta | Descrição | Responsabilidade Técnica |
-| :--- | :--- | :--- |
-| **Fórmulas Visuais** | Gatilhos e automações de processos no RM | Desenvolvimento (Regra/Arquitetura) |
-| **Consultas SQL** | Views e Scripts para Relatórios e Cubos | Desenvolvimento (Performance/Lógica) |
-| **Integração ETL** | Fluxos de extração e carga de dados (Conceitos) | Desenvolvimento |
-| **Metadados** | Criação de tabelas e campos customizados | Desenvolvimento/Suporte |
-| **Gerador de Saídas** | Layouts de integração bancária e fiscal | Suporte (Parametrização) |
+| *(Em análise)* | | |
 
 ---
-*Nota: Para novos projetos, siga o padrão de nomenclatura `app-`, `lib-` ou `bpm-`.*
+*Nota: Para novos sistemas, siga o padrão de nomenclatura `app-`, `lib-` ou `bpm-`.*
