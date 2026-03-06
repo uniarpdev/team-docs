@@ -24,6 +24,7 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Portais Diversos** | PHP / Web | SEDEPEX, Egresso, Jogos, Acervo e LGPD | Maia |
 | **Monitoria** | `Bubble.io` | Gestão de agendamento de monitorias (No-Code) | Thiago |
 | **Gestão de Frotas** | `Bubble.io` | Controle de veículos | Thiago |
+| **Site Institucional** | WordPress | Site público uniarp.edu.br | Maia |
 
 ### 1.2. Ecossistema de Integrações Internas
 *Fluxos de sincronismo e comunicação desenvolvidos pela equipe.*
@@ -74,14 +75,13 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Meu RH (Web)** | Totvs (Web) | Portal web para colaboradores | Rolff |
 | **Suricato** | Telemática | Gestão de segurança física e acesso | Dionathan |
 | **Fluig (Plataforma)**| Totvs | Ambiente de BPM e Portais | Theo |
-| **Plataforma LXP** | Grupo A | Ambiente Virtual de Aprendizagem | A definir |
+| **Plataforma LXP** | +Campus/GrupoA | Ambiente Virtual de Aprendizagem | A definir |
 | **GPA** | +Campus/GrupoA | Gestão de projetos e atividades acadêmicas | A definir |
 | **NPJ** | +Campus/GrupoA | Núcleo de Práticas Jurídicas | A definir |
 | **Avalia** | +Campus/GrupoA | Plataforma de avaliações e provas | A definir |
 | **Assinatura Digit.**| TAE Totvs Assinatura | Assinatura eletrônica de documentos | A definir |
 | **Atendimento Whats** | WorkChat | Automação via WhatsApp | A definir |
 | **Gestão Carreira** | Valorizza | Plataforma de gestão de carreira | A definir |
-| **Site Institucional** | WordPress | Site público uniarp.edu.br | Maia |
 | **CRM / Marketing** | Rubeus | Gestão de relacionamento e captação | David |
 | **Ponto (Kairos)** | Kairos (Dimep) | Coleta de registros de ponto | Dionathan |
 | **GED / Diplomas** | DocXpress/Diplomax| Digitalização e gestão de diplomas | Eduardo |
