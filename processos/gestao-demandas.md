@@ -10,6 +10,11 @@ Para garantir o controle entre o planejamento estratégico e a execução técni
 *   **O que é:** Repositório central de todas as tarefas, ideias e demandas futuras (extraídas do planejamento em Excel e novas solicitações).
 *   **Temporalidade:** Atemporal (contínuo).
 *   **Objetivo:** Servir como base para triagem e priorização constante. É o "estacionamento" de ideias que ainda não entraram em execução.
+*   **Organização (Buckets por Origem):**
+    *   **🎯 Radar Gestão:** Demandas estratégicas e prioridades definidas pela Direção da Uniarp.
+    *   **👥 Usuários & Departamentos:** Solicitações de melhorias ou novos recursos vindas das áreas de negócio (via GLPI ou reuniões).
+    *   **⚙️ Gestão TI:** Demandas de infraestrutura técnica, segurança, governança e conformidade.
+    *   **🚀 Equipe (Inovação/Técnico):** Sugestões do time de desenvolvimento para refatoração, novas tecnologias e redução de débito técnico.
 
 ### Nível 2: Dashboard de Execução Global (Ciclo Anual)
 *   **O que é:** Painel principal com as tarefas ativas do ano corrente (Ex: `Execução Global 2026`).
@@ -40,12 +45,14 @@ O GLPI continua sendo a ferramenta oficial para incidentes e solicitações de u
 
 ---
 
-## 4. Estrutura Operacional (Planner Desenvolvimento TI 2026)
+## 4. Estrutura Operacional (Nível 2: Execução Global)
 
-Para manter a organização visual e facilitar a filtragem de dados, o painel principal utiliza os seguintes padrões:
+Para manter a organização visual e facilitar a filtragem de dados no painel anual (Ex: `Execução Global 2026`), utilizamos os seguintes padrões:
+
+> **💡 Nota sobre Transição:** Ao promover uma demanda do **N1 (Backlog)** para o **N2 (Execução)**, o card deve ser movido do seu "Bucket de Origem" para o respectivo "Bucket de Sistema/Ferramenta" listado abaixo.
 
 ### Buckets (Alinhamento com Mapa de Ferramentas)
-Para facilitar a rastreabilidade, os buckets do Planner espelham as categorias do nosso inventário de software:
+Para facilitar a rastreabilidade, os buckets do Planner N2 espelham as categorias do nosso inventário de software:
 
 *   **📥 Triagem / Backlog:** Demandas em fase de análise ou aguardando priorização.
 *   **💻 Aplicações (Apps):** Desenvolvimento e manutenção de sistemas próprios (Ex: `app-portal`, `app-bolsas`).
@@ -60,8 +67,7 @@ Para facilitar a rastreabilidade, os buckets do Planner espelham as categorias d
 *   **🔴 Bug / Crítico:** Erros em produção que exigem ação imediata.
 *   **🟡 Melhoria:** Evolução incremental de sistemas existentes.
 *   **🟢 Novo Recurso:** Implementação de funcionalidades inéditas.
-*   **🔵 Integração:** Tarefas que envolvem comunicação entre sistemas distintos.
-*   **🟠 Aguardando N2/Gestão:** Bloqueio por definição funcional ou aprovação superior.
+*   **🟠 Aguardando Revisão:** Bloqueio por definição funcional, aprovação ou revisão técnica/gerencial.
 *   **🟣 Infraestrutura:** Dependência técnica de Rede/Servidores ou **Atualizações de Plataforma** (Ex: Update do Fluig).
 
 ---
@@ -79,7 +85,7 @@ Para garantir a fluidez do processo, a gestão dos Planners é dividida por nív
 
 ---
 
-## 5. Ganhos Estratégicos
+## 6. Ganhos Estratégicos
 
 *   **Limpeza Visual:** Foco total no que tem prazo, mantendo o que não é prioridade "escondido" no Backlog.
 *   **Mensuração de Resultados:** Facilita a prestação de contas anual e o planejamento do ciclo seguinte.
