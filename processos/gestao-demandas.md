@@ -7,89 +7,77 @@ Este documento define a metodologia de organização de tarefas, projetos e cham
 Para garantir o controle entre o planejamento estratégico e a execução técnica, utilizamos uma estrutura dividida em três níveis de maturidade e temporalidade:
 
 ### Nível 1: Backlog de Demandas (Atemporal)
-*   **O que é:** Repositório central de todas as tarefas, ideias e demandas futuras (extraídas do planejamento em Excel e novas solicitações).
+*   **O que é:** Repositório central de todas as tarefas, ideias e demandas futuras.
 *   **Temporalidade:** Atemporal (contínuo).
-*   **Objetivo:** Servir como base para triagem e priorização constante. É o "estacionamento" de ideias que ainda não entraram em execução.
-*   **Organização (Buckets por Origem):**
-    *   **🎯 Radar Gestão:** Demandas estratégicas e prioridades definidas pela Direção da Uniarp.
-    *   **👥 Usuários & Departamentos:** Solicitações de melhorias ou novos recursos vindas das áreas de negócio (via GLPI ou reuniões).
-    *   **⚙️ Gestão TI:** Demandas de infraestrutura técnica, segurança, governança e conformidade.
-    *   **🚀 Equipe (Inovação/Técnico):** Sugestões do time de desenvolvimento para refatoração, novas tecnologias e redução de débito técnico.
+*   **Objetivo:** Servir como base para triagem e priorização constante.
+*   **Estrutura de Buckets (Origem):**
+    *   **🎯 Radar Gestão:** Demandas estratégicas e prioridades da Direção.
+    *   **👥 Usuários & Departamentos:** Solicitações via GLPI ou reuniões.
+    *   **⚙️ Gestão TI:** Infraestrutura, segurança e governança.
+    *   **🚀 Equipe (Inovação/Técnico):** Refatoração e débito técnico.
 
 ### Nível 2: Dashboard de Execução Global (Ciclo Anual)
 *   **O que é:** Painel principal com as tarefas ativas do ano corrente (Ex: `Execução Global 2026`).
 *   **Temporalidade:** Ciclo anual (Janeiro a Dezembro).
-*   **Objetivo:** Centralizar o que está sendo entregue no ano. Ao final do ciclo, o painel é arquivado, gerando o relatório consolidado de entregas daquele ano.
+*   **Objetivo:** Centralizar as entregas do ano.
+*   **Estrutura de Buckets (Sistemas/Ferramentas):**
+    *   **📥 Triagem / Backlog:** Itens recém-promovidos do N1 aguardando início.
+    *   **💻 Aplicações (Apps):** Sistemas próprios (Portal, Bolsas, etc).
+    *   **📚 Bibliotecas & APIs (Libs):** Componentes e conectores.
+    *   **🏢 Ecossistema TOTVS RM:** Customizações no ERP.
+    *   **☁️ Plataformas & Terceiros:** Low-Code (Fluig, Power BI) e integrações externas.
+    *   **📖 Documentação & Processos:** Manutenção do `team-docs` e cultura.
 
 ### Nível 3: Planners de Projetos (Ciclo do Projeto)
-*   **O que é:** Painéis dedicados para grandes projetos ou implantações complexas (Ex: `PRJ-2026 | Implantação Valorizza`).
-*   **Temporalidade:** Vinculada ao cronograma do projeto (Início e Fim definidos).
-*   **Objetivo:** Detalhamento técnico e operacional de entregas específicas. Uma vez concluído o projeto, o Planner é arquivado.
+*   **O que é:** Painéis dedicados para grandes projetos ou implantações complexas.
+*   **Temporalidade:** Vinculada ao cronograma do projeto (Início e Fim).
+*   **Objetivo:** Detalhamento técnico e operacional específico.
 
 ---
 
-## 2. Padronização e Visibilidade
+## 2. Padronização e Identificação (Compartilhado)
 
-*   **Nomenclatura:** Todos os projetos e painéis devem conter o ano no nome (Ex: `Execução 2026`) para facilitar a busca histórica e evitar confusão com anos anteriores.
-*   **Rastreabilidade:** Cards no **Painel Global** que referenciam projetos específicos devem conter o link para o respectivo **Planner de Projeto**, mantendo a conexão entre o macro e o micro.
+Para manter a consistência entre todos os níveis (N1, N2 e N3), utilizamos os seguintes padrões:
+
+### Tags (Categorização e Filtro)
+As tags são idênticas em todos os Planners para permitir visão unificada:
+*   **🔴 Bug / Crítico:** Erros em produção que exigem ação imediata.
+*   **🟡 Melhoria:** Evolução incremental de sistemas existentes.
+*   **🟢 Novo Recurso:** Implementação de funcionalidades inéditas.
+*   **🟠 Aguardando Revisão:** Bloqueio por definição funcional, aprovação ou revisão técnica/gerencial.
+*   **🟣 Infraestrutura:** Dependência técnica de Rede/Servidores ou Atualizações de Plataforma.
+
+### Nomenclatura
+*   **Ano no Nome:** Painéis devem conter o ano (Ex: `Execução 2026`) para histórico.
+*   **Rastreabilidade:** Cards no N2 que referenciam projetos N3 devem conter o link direto para o Planner do projeto.
 
 ---
 
 ## 3. Integração com GLPI (Chamados)
 
-O GLPI continua sendo a ferramenta oficial para incidentes e solicitações de usuários (N2/N3). O fluxo de integração segue estas premissas:
-
-1.  **Incidentes Rápidos:** São resolvidos diretamente no ticket do GLPI.
-2.  **Bugs de Código / Melhorias:** Geram um card no **Backlog** ou **Execução Global** do Planner, com o número do ticket do GLPI referenciado para rastreabilidade.
-3.  **Fechamento:** O ticket no GLPI só é encerrado após a conclusão da tarefa no Planner e validação com o solicitante.
-
----
-
-## 4. Estrutura Operacional (Nível 2: Execução Global)
-
-Para manter a organização visual e facilitar a filtragem de dados no painel anual (Ex: `Execução Global 2026`), utilizamos os seguintes padrões:
-
-> **💡 Nota sobre Transição:** Ao promover uma demanda do **N1 (Backlog)** para o **N2 (Execução)**, o card deve ser movido do seu "Bucket de Origem" para o respectivo "Bucket de Sistema/Ferramenta" listado abaixo.
-
-### Buckets (Alinhamento com Mapa de Ferramentas)
-Para facilitar a rastreabilidade, os buckets do Planner N2 espelham as categorias do nosso inventário de software:
-
-*   **📥 Triagem / Backlog:** Demandas em fase de análise ou aguardando priorização.
-*   **💻 Aplicações (Apps):** Desenvolvimento e manutenção de sistemas próprios (Ex: `app-portal`, `app-bolsas`).
-*   **📚 Bibliotecas & APIs (Libs):** Evolução de componentes compartilhados e conectores (Ex: `lib-api-totvs`).
-*   **🏢 Ecossistema TOTVS RM:** Customizações de baixo nível no ERP (Fórmulas Visuais, SQLs, Metadados).
-*   **☁️ Plataformas & Terceiros:** Soluções Low-Code/No-Code (Fluig, Bubble, Power BI) e integrações específicas (Avalia, Valorizza).
-    *   *Nota: Projetos transversais (que envolvem múltiplas áreas ou ferramentas externas) devem ser centralizados no bucket da plataforma de maior impacto ou origem da demanda.*
-*   **📖 Documentação & Processos:** Manutenção do `team-docs`, revisão de ritos e cultura de engenharia.
-
-
-### Tags (Categorização e Filtro)
-*   **🔴 Bug / Crítico:** Erros em produção que exigem ação imediata.
-*   **🟡 Melhoria:** Evolução incremental de sistemas existentes.
-*   **🟢 Novo Recurso:** Implementação de funcionalidades inéditas.
-*   **🟠 Aguardando Revisão:** Bloqueio por definição funcional, aprovação ou revisão técnica/gerencial.
-*   **🟣 Infraestrutura:** Dependência técnica de Rede/Servidores ou **Atualizações de Plataforma** (Ex: Update do Fluig).
+O GLPI é a porta de entrada para incidentes e solicitações (N2/N3):
+1.  **Incidentes Rápidos:** Resolvidos diretamente no GLPI.
+2.  **Bugs/Melhorias:** Geram card no Planner (N1 ou N2) referenciando o ticket do GLPI.
+3.  **Fechamento:** O ticket só é encerrado após conclusão no Planner e validação.
 
 ---
 
-## 5. Papéis e Responsabilidades por Nível
-
-Para garantir a fluidez do processo, a gestão dos Planners é dividida por nível de governança:
+## 4. Papéis e Responsabilidades por Nível
 
 | Nível | Responsável | Atribuições Principais |
 | :--- | :--- | :--- |
-| **Estratégico** | **Gestor (Carlos)** | Arbitragem de prioridades macro e validação dos resultados anuais. |
-| **N1: Backlog** | **Supervisor (Marcelo)** | Triagem de novas demandas (Excel/E-mail/Gestão) e priorização técnica. |
-| **N2: Execução Global** | **Supervisor / Analistas** | Gestão das tarefas ativas da Sprint/Mês e acompanhamento de prazos anuais. |
-| **N3: Projetos (PRJ)** | **Analistas (Pontos Focais)** | Detalhamento técnico, check-lists operacionais e atualização diária do progresso. |
+| **Estratégico** | **Gestor (Carlos)** | Arbitragem de prioridades macro e validação de resultados. |
+| **N1: Backlog** | **Supervisor (Marcelo)** | Triagem de origens e priorização técnica inicial. |
+| **N2: Execução** | **Supervisor / Analistas** | Gestão das tarefas ativas e acompanhamento de prazos. |
+| **N3: Projetos** | **Analistas (Pontos Focais)** | Detalhamento técnico e atualização diária. |
 
 ---
 
-## 6. Ganhos Estratégicos
+## 5. Ganhos Estratégicos
 
-*   **Limpeza Visual:** Foco total no que tem prazo, mantendo o que não é prioridade "escondido" no Backlog.
-*   **Mensuração de Resultados:** Facilita a prestação de contas anual e o planejamento do ciclo seguinte.
-*   **Foco na Conclusão:** Combate o acúmulo de cards parados ao forçar o encerramento de painéis temporais.
+*   **Foco Visual:** Separação clara entre o que é "origem" (N1) e o que é "entrega" (N2).
+*   **Linguagem Comum:** Tags unificadas facilitam a transição de cards entre painéis.
+*   **Foco na Conclusão:** Combate o acúmulo de cards parados através do ciclo anual.
 
 ---
 *Este processo deve ser revisado anualmente durante a transição de ciclo dos Planners.*
