@@ -35,7 +35,9 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Check-in Aula** | Registro de presença via portal com validação de geolocalização/horário. | Aluno |
 | **Análise Curricular**| Emissão de relatórios de evolução no curso e matriz curricular. | Aluno |
 | **Aproveitamento** | Fluxo digital para solicitação e acompanhamento de aproveitamento de estudos. | Aluno |
-| **Gestão Acadêmica** | Consulta de notas, faltas, horários e documentos acadêmicos. | Aluno |
+| **Ativ. Complementar**| Gerenciamento de horas, submissão de certificados e validação de atividades. | Aluno/Coord. |
+| **Turma/Disciplina**| Gestão de diário: Planos de Aula/Ensino, Calendário, Horários e Matrículas. | Aluno/Prof. |
+| **Gestão Acadêmica** | Consulta de notas, faltas e documentos acadêmicos. | Aluno |
 | **Painel Coord.** | Visualização e gestão de professores e turmas vinculadas. | Coordenador |
 
 #### B. Integrações Residentes (Middleware)
