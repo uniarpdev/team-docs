@@ -13,8 +13,6 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Identidade (Web)** | [`app-ldap`](https://github.com/uniarpdev/app-ldap) | Interno | Interface de autosserviço LDAP (Web) | Marcelo |
 | **Portaria (Gestão)** | [`app-portaria`](https://github.com/uniarpdev/app-portaria) | Interno | Gestão de acesso e integração RM (Desktop) | Marcelo |
 | **Crachás (Web)** | [`app-portaria`](https://github.com/uniarpdev/app-portaria) | Interno | Solicitação de crachás (Web) | Marcelo |
-| **Sincronismo AD** | Integração RM -> AD | Interno | Manutenção de usuários no Active Directory | Marcelo |
-| **Suricato** | Telemática | Terceiro | Gestão de segurança física e acesso | Marcelo |
 
 ## 2. Portais e Experiência do Aluno
 *Ecossistema de interfaces e interação com o público acadêmico.*
@@ -89,7 +87,6 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Processos BPM** | `Fluig` | Terceiro | Gestão de workflows e aprovações | Theo |
 | **Gestão de TI** | `GLPI` | Terceiro | Gerenciamento de chamados e ativos | Marcelo |
 | **CRM / Marketing** | Rubeus | Terceiro | Gestão de relacionamento e captação | A definir |
-| **Ponto / RH** | Kairos (Dimep) | Terceiro | Coleta de registros de ponto | A definir |
 | **GED / Diplomas** | DocXpress/Diplomax| Terceiro | Digitalização e gestão de diplomas | A definir |
 
 ## 6. Bibliotecas e Utilitários (Helpers)
