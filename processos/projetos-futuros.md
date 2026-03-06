@@ -2,24 +2,28 @@
 
 Este documento mapeia as iniciativas de melhoria de processos, adoção de novas tecnologias e evolução da metodologia de trabalho do Grupo de Desenvolvimento Uniarp.
 
-## 🚀 Próximos Passos (Processos Ágeis)
+## 🚀 Ritos e Cadência de Reuniões
 
-Abaixo estão as iniciativas planejadas para aumentar a transparência e a eficiência do time.
+Abaixo estão as reuniões fixas estabelecidas para garantir o alinhamento estratégico e a fluidez técnica do time.
 
-### 1. Implementação de Reuniões Diárias (Daily)
-**Status:** Planejado / Em Implantação
-**Objetivo:** Alinhamento rápido de atividades e identificação imediata de impedimentos.
+### 1. Alinhamento de Gestão (Estratégico)
+**Status:** Operacional
+**Participantes:** Marcelo (Supervisor) e Zorzo (Gestor).
+**Frequência:** Segundas-feiras, às 10:00 (Duração máx: 30 min).
 
--   **Formato:** Reunião de 15 minutos (em pé ou chamada rápida).
+-   **Objetivo:** Revisar o **Backlog (N1)**, definir prioridades da semana e resolver conflitos de demandas externas.
+-   **Pauta:** O que entra em execução, o que aguarda e validação de resultados da semana anterior.
+
+### 2. Alinhamento de Equipe (Daily / Operacional)
+**Status:** Operacional
+**Participantes:** Marcelo e Equipe de Desenvolvimento.
+**Frequência:** Segunda a Sexta, no período da tarde (Duração máx: 15 min).
+
+-   **Objetivo:** Sincronismo rápido sobre o progresso das tarefas e identificação imediata de impedimentos técnicos.
 -   **Pauta:** 
-    1. O que eu fiz ontem?
-    2. O que pretendo fazer hoje?
-    3. Existe algum impedimento bloqueando meu trabalho?
--   **Horário sugerido:** Início do expediente (ex: 08:15 ou 13:30).
-
-### 2. Gestão de Backlog e Sprints (Futuro)
-**Status:** Planejado
-**Objetivo:** Organizar as demandas em ciclos semanais ou quinzenais para evitar a sobrecarga e melhorar a previsibilidade das entregas.
+    1. O que foi feito desde o último alinhamento?
+    2. O que será feito até amanhã?
+    3. Existe algum impedimento bloqueando o trabalho?
 
 ---
 
