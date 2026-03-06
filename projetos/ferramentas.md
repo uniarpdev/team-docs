@@ -70,9 +70,13 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Portal Educacional**| Totvs (RM) | Interface nativa RM (Alunos/Prof) | Rolff |
 | **Minha Uniarp (App)**| Totvs (Mobile) | Aplicativo mobile acadêmico | Rolff |
 | **Meu RH (App)** | Totvs (Mobile) | Gestão de comunicação com colaboradores | Rolff |
+| **Meu RH (Web)** | Totvs (Web) | Portal web para colaboradores | Rolff |
 | **Suricato** | Telemática | Gestão de segurança física e acesso | Dionathan |
 | **Fluig (Plataforma)**| Totvs | Ambiente de BPM e Portais | Theo |
 | **Plataforma LXP** | Grupo A | Ambiente Virtual de Aprendizagem | A definir |
+| **GPA** | +Campus/GrupoA | Gestão de projetos e atividades acadêmicas | A definir |
+| **NPJ** | +Campus/GrupoA | Núcleo de Práticas Jurídicas | A definir |
+| **Avalia** | +Campus/GrupoA | Plataforma de avaliações e provas | A definir |
 | **Assinatura Digit.**| TAE Totvs Assinatura | Assinatura eletrônica de documentos | A definir |
 | **Atendimento Whats** | WorkChat | Automação via WhatsApp | A definir |
 | **Gestão Carreira** | Valorizza | Plataforma de gestão de carreira | A definir |
