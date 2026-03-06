@@ -49,18 +49,31 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Segurança / Saúde** | RM Agilis / Bonum | Terceiro | Atendimento e gestão patrimonial | A definir |
 | **Custom RM (Low)** | Fórmulas Visuais | Interno | Lógica interna e gatilhos do ERP | Marcelo |
 
-## 4. Integrações Acadêmicas e de Dados
-*Fluxos de comunicação entre o RM e plataformas externas.*
+## 4. Ecossistema de Integrações
+*Fluxos de sincronismo e comunicação entre o TOTVS RM e sistemas satélites.*
 
-| Produto | Repositório / Tecnologia | Origem | Descrição | Ponto Focal |
+### 4.1. Integrações Acadêmicas (Ensino e Notas)
+| Produto | Tecnologia | Origem | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- | :--- |
-| **Integrador Acad.** | [`app-academico`](https://github.com/uniarpdev/app-academico) | Interno | Automação de processos RM (Console) | Marcelo |
-| **Notas (Manager)** | [`app-portal-mvc`](https://github.com/uniarpdev/app-portal-mvc) | Interno | Sincronismo LXP -> RM (Portal) | Marcelo |
-| **Notas (Avalia)** | .NET Framework | Interno | Integração antiga Avalia -> RM | Marcelo |
-| **Biblioteca Dig.** | `Minha Biblioteca` (PHP) | Interno | Integração usuários RM -> Grupo A | Marcelo |
-| **Módulo Valorizza** | Integração (Portal) | Interno | Integração Valorizza (Reside no Portal) | Marcelo |
+| **Notas (Manager)** | [`app-portal-mvc`](https://github.com/uniarpdev/app-portal-mvc) | Interno | Sincronismo LXP -> RM (Nova integração Grupo A) | Marcelo |
+| **Notas (Avalia)** | .NET Framework | Interno | Integração antiga Avalia -> RM (Projeto Separado) | Marcelo |
+| **Biblioteca Dig.** | `Minha Biblioteca` (PHP) | Interno | Sincronismo de usuários RM -> Grupo A | Marcelo |
+| **Plataforma LXP** | Integração LTI | Terceiro | Autenticação e acesso ao ambiente de aprendizagem | Marcelo |
 | **Módulo Orbita** | Integração RM | Terceiro | Geração de matrículas (Orbita -> RM) | A definir |
-| **Assinatura Digit.**| Sign (Totvs) | Terceiro | Assinatura eletrônica de documentos | A definir |
+| **Módulo Valorizza**| Integração (Portal) | Interno | Integração Valorizza (Reside no Portal) | Marcelo |
+
+### 4.2. Integrações de Identidade e Segurança
+| Produto | Tecnologia | Origem | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Sincronismo AD** | Integração RM -> AD | Interno | Manutenção de usuários no Active Directory | Marcelo |
+| **Acesso Suricato** | Integração RM | Terceiro | Sincronismo de crachás e permissões de acesso | Marcelo |
+
+### 4.3. Integrações Administrativas e Documentais
+| Produto | Tecnologia | Origem | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- | :--- |
+| **Assinatura Digit.**| Sign (Totvs) | Terceiro | Assinatura eletrônica de contratos e documentos | A definir |
+| **Integrador Acad.** | [`app-academico`](https://github.com/uniarpdev/app-academico) | Interno | Automação de bolsas e processos RM (Console) | Marcelo |
+| **Ponto (Kairos)** | Integração RM | Terceiro | Envio de batidas e justificativas de ponto | A definir |
 
 ## 5. Processos Administrativos e Backoffice
 *Automação de fluxos internos e suporte.*
