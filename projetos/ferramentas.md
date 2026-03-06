@@ -7,16 +7,19 @@ Este documento mapeia os ativos de tecnologia da Uniarp por **Produto/Sistema**,
 
 | Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
-| **Identidade Uniarp** | `app-identidade-ldap` / `lib-api-ldap` | Gestão de usuários e senhas LDAP | Marcelo |
-| **Portaria & Crachás**| `app-portaria` | Solicitação de crachás e controle de acesso | Marcelo |
+| **Identidade (Adm)** | `app-ldap` | Gerenciamento administrativo de usuários LDAP (Desktop) | Marcelo |
+| **Identidade (Web)** | `app-ldap` / `lib-api-ldap` | Interface de autosserviço para usuários (Web) | Marcelo |
+| **Portaria (Gestão)** | `app-portaria` | Monitoramento e gestão de acesso (Desktop) | Marcelo |
+| **Crachás (Web)** | `app-portaria` | Solicitação de crachás por alunos/professores (Web) | Marcelo |
 
 ## 2. Portais e Experiência do Aluno
 *Interfaces de interação direta com o corpo discente e público externo.*
 
 | Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
-| **Portal do Aluno** | `app-portal-mvc` | Portal intranet principal da Uniarp | Marcelo |
-| **Carteirinha Digital**| `app-carteirinha` | Gestão e exibição de carteirinhas estudantis | Thiago |
+| **Portal de Ensino** | `app-portal-mvc` | Portal intranet principal da Uniarp | Marcelo |
+| **Carteirinha (Aluno)**| `app-carteirinha` | Exibição digital de carteirinhas estudantis (Web) | Thiago |
+| **Carteirinha (Adm)** | `app-carteirinha` | Impressão e gestão administrativa (Desktop) | Thiago |
 | **Extrato de Notas** | `app-extrato-notas` | Emissão de extratos (Colégio de Aplicação) | Thiago |
 | **Site Institucional** | WordPress (`Portal Uniarp`) | Site público uniarp.edu.br | Andre |
 
@@ -36,9 +39,10 @@ Este documento mapeia os ativos de tecnologia da Uniarp por **Produto/Sistema**,
 
 | Produto | Repositórios / Tecnologia | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
-| **Gestão de Bolsas** | `app-bolsas` | Controle e concessão de bolsas estudantis | Thiago |
-| **Pagamentos Med** | `app-pagmed` | Gestão de pagamentos curso de Medicina | Thiago |
-| **RH e Férias** | `app-aviso-ferias` | Sistema de aviso de férias colaboradores | Thiago |
+| **Gestão de Bolsas** | `app-bolsas` | Painel administrativo e concessão (Desktop) | Thiago |
+| **Inscrição de Bolsas**| `app-bolsas` | Formulário de inscrição para alunos (Web) | Thiago |
+| **Pagamentos Med** | `app-pagmed` | Gestão de pagamentos curso de Medicina (Desktop) | Thiago |
+| **RH e Férias** | `app-aviso-ferias` | Emissão de avisos de férias (Desktop) | Thiago |
 | **Gestão de Frotas** | `app-gestao-frotas` / `Bubble.io` | Controle de veículos e solicitações | Thiago |
 | **Processos BPM** | Plataforma `Fluig` | Fluxos de trabalho e aprovações digitais | Theo |
 | **Gestão de TI** | `GLPI` / `team-docs` | Chamados, Inventário e Documentação | Marcelo |
