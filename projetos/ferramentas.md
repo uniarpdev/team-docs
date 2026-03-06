@@ -26,7 +26,18 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Gestão de Frotas** | `Bubble.io` | Controle de veículos | Thiago |
 | **Site Institucional** | WordPress | Site público uniarp.edu.br | Maia |
 
-### 1.2. Ecossistema de Integrações Internas
+### 1.2. Funcionalidades - Portal de Ensino (MVC)
+*Detalhamento dos módulos e serviços disponíveis no portal unificado (Branch: unificacao).*
+
+| Módulo | Funcionalidades Principais |
+| :--- | :--- |
+| **AVA (Ambiente Virtual)** | Integração de notas (Manager/LXP), acesso ao ambiente de aprendizagem e autenticação centralizada. |
+| **Acadêmico (Edu)** | Registro e controle de presença em sala de aula (Check-in Aula), consulta de horários e dados acadêmicos. |
+| **Integração de Dados** | Módulos de sincronismo entre o ERP TOTVS RM e sistemas parceiros (Grupo A, Valorizza, etc). |
+| **Recursos Humanos (RH)** | Portal de suporte ao colaborador e gestão de informações internas. |
+| **Gestão de Acesso** | Autenticação unificada e gerenciamento de permissões por perfil (Aluno, Professor, Gestor). |
+
+### 1.3. Ecossistema de Integrações Internas
 *Fluxos de sincronismo e comunicação desenvolvidos pela equipe.*
 
 | Produto | Tecnologia | Descrição | Ponto Focal |
