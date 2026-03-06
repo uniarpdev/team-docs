@@ -34,22 +34,35 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Portal de Eventos** | PHP / Web | Interno | SEDEPEX e Eventos Teatro | Andre |
 | **Portais Diversos** | PHP / Web | Interno | Egresso, Jogos, Acervo e LGPD | Andre |
 
-## 3. Gestão Acadêmica e Integrações (Core ERP)
-*Sistemas de processamento acadêmico e fluxos de integração.*
+## 3. Ecossistema TOTVS RM (Módulos e Customizações)
+*Vertical de gestão institucional (ERP). Supervisão Geral: **Rolff***
+
+| Módulo / Produto | Tecnologia | Origem | Descrição | Analista Responsável |
+| :--- | :--- | :--- | :--- | :--- |
+| **Educacional** | RM Classis Net | Terceiro | Gestão acadêmica e enturmação | A definir |
+| **Financeiro** | RM Fluxus | Terceiro | Gestão de contas a pagar/receber e caixa | A definir |
+| **Contábil / Fiscal**| RM Saldus / Liber | Terceiro | Escrituração, impostos e contabilidade | A definir |
+| **Folha / RH** | RM Labore / Vitae | Terceiro | Gestão de pessoas e pagamentos | A definir |
+| **Ponto Eletrônico** | RM Chronus | Terceiro | Gestão de jornada e integração Kairos | A definir |
+| **Estoque / Compras** | RM Nucleus | Terceiro | Suprimentos, faturamento e compras | A definir |
+| **Biblioteca** | RM Biblios | Terceiro | Gestão de acervo físico e empréstimos | A definir |
+| **Segurança / Saúde** | RM Agilis / Bonum | Terceiro | Atendimento e gestão patrimonial | A definir |
+| **Custom RM (Low)** | Fórmulas Visuais | Interno | Lógica interna e gatilhos do ERP | Marcelo |
+
+## 4. Integrações Acadêmicas e de Dados
+*Fluxos de comunicação entre o RM e plataformas externas.*
 
 | Produto | Repositório / Tecnologia | Origem | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- | :--- |
-| **TOTVS RM** | ERP (C# / SQL) | Terceiro | Sistema Core Institucional | **Rolff** |
 | **Integrador Acad.** | [`app-academico`](https://github.com/uniarpdev/app-academico) | Interno | Automação de processos RM (Console) | Marcelo |
 | **Notas (Manager)** | [`app-portal-mvc`](https://github.com/uniarpdev/app-portal-mvc) | Interno | Sincronismo LXP -> RM (Portal) | Marcelo |
 | **Notas (Avalia)** | .NET Framework | Interno | Integração antiga Avalia -> RM | Marcelo |
 | **Biblioteca Dig.** | `Minha Biblioteca` (PHP) | Interno | Integração usuários RM -> Grupo A | Marcelo |
 | **Módulo Valorizza** | Integração (Portal) | Interno | Integração Valorizza (Reside no Portal) | Marcelo |
 | **Módulo Orbita** | Integração RM | Terceiro | Geração de matrículas (Orbita -> RM) | A definir |
-| **Custom RM (Low)** | Fórmulas Visuais | Interno | Lógica interna e gatilhos do ERP | Marcelo |
 | **Assinatura Digit.**| Sign (Totvs) | Terceiro | Assinatura eletrônica de documentos | A definir |
 
-## 4. Processos Administrativos e Backoffice
+## 5. Processos Administrativos e Backoffice
 *Automação de fluxos internos e suporte.*
 
 | Produto | Repositório / Tecnologia | Origem | Descrição | Ponto Focal |
@@ -66,7 +79,7 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Ponto / RH** | Kairos (Dimep) | Terceiro | Coleta de registros de ponto | A definir |
 | **GED / Diplomas** | DocXpress/Diplomax| Terceiro | Digitalização e gestão de diplomas | A definir |
 
-## 5. Bibliotecas e Utilitários (Helpers)
+## 6. Bibliotecas e Utilitários (Helpers)
 *Componentes de suporte e bibliotecas de classes compartilhadas.*
 
 | Helper | Repositório | Descrição | Ponto Focal |
@@ -78,7 +91,7 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Dotnet Utils** | [`lib-dotnet-utils`](https://github.com/uniarpdev/lib-dotnet-utils) | Helpers gerais para projetos .NET C# | Marcelo |
 | **Scripts & Tasks** | [`uniarpTasks`](https://github.com/uniarpdev/uniarpTasks) | Automações e tarefas agendadas | Marcelo |
 
-## 6. Analytics e Automação de Escritório
+## 7. Analytics e Automação de Escritório
 *Inteligência de dados e ferramentas de produtividade.*
 
 | Produto | Tecnologia | Origem | Descrição | Ponto Focal |
@@ -87,7 +100,7 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, integra
 | **Office 365** | Power Automate | Terceiro | Automações de formulários/fluxos | Dionathan |
 | **Impressão** | `SafePrint` | Terceiro | Gestão de cotas de impressão | Dionathan |
 
-## 7. Expansão e Colaboração (TI Uniarp)
+## 8. Expansão e Colaboração (TI Uniarp)
 Este repositório de documentação (`team-docs`) está em processo de expansão para cobrir as necessidades de **toda a equipe de TI da Uniarp**. 
 - **Setor de Redes e Infraestrutura:** Futura inclusão de topologias e manuais de servidores.
 - **Suporte a Sistemas:** Centralização de manuais funcionais e base de conhecimento.
