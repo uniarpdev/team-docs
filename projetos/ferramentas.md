@@ -25,7 +25,21 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Monitoria** | `Bubble.io` | Gestão de agendamento de monitorias (No-Code) | Thiago |
 | **Gestão de Frotas** | `Bubble.io` | Controle de veículos | Thiago |
 
-### 1.2. Bibliotecas, APIs e Helpers (Infraestrutura de Código)
+### 1.2. Ecossistema de Integrações Internas
+*Fluxos de sincronismo e comunicação desenvolvidos pela equipe.*
+
+| Produto | Tecnologia | Descrição | Ponto Focal |
+| :--- | :--- | :--- | :--- |
+| **GrupoA (Manager)**| [`app-portal-mvc`](https://github.com/uniarpdev/app-portal-mvc) | Sincronismo LXP -> RM (Portal) | Marcelo |
+| **GrupoA (Avalia)** | .NET Framework | Integração antiga Avalia -> RM | Marcelo |
+| **Biblioteca Dig.** | `Minha Biblioteca` (PHP) | Sincronismo de usuários RM -> Grupo A | Marcelo |
+| **Módulo Valorizza**| Integração (Portal) | Integração Valorizza (Reside no Portal) | Marcelo |
+| **Sincronismo AD** | Integração RM -> AD | Manutenção de usuários no Active Directory | Marcelo |
+| **Custom RM (Low)** | Fórmulas Visuais / SQL | Lógica interna e gatilhos do ERP | Marcelo |
+| **Processos BPM** | Fluig (Processos) | Fluxos de trabalho customizados (Ex: SAE, Compras) | Theo |
+| **Dashboards BI** | Power BI (Dashboards) | Painéis estratégicos desenvolvidos internamente | Thiago |
+
+### 1.3. Bibliotecas, APIs e Helpers (Infraestrutura de Código)
 | Helper | Repositório | Descrição | Ponto Focal |
 | :--- | :--- | :--- | :--- |
 | **API TOTVS** | [`lib-api-totvs`](https://github.com/uniarpdev/lib-api-totvs) | Cliente de integração com APIs TOTVS | Marcelo |
@@ -34,19 +48,6 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **API Valorizza** | [`lib-api-valorizza`](https://github.com/uniarpdev/lib-api-valorizza) | Conector para APIs da Valorizza | Marcelo |
 | **Dotnet Utils** | [`lib-dotnet-utils`](https://github.com/uniarpdev/lib-dotnet-utils) | Helpers gerais para projetos .NET C# | Marcelo |
 | **Scripts & Tasks** | [`uniarpTasks`](https://github.com/uniarpdev/uniarpTasks) | Automações e tarefas agendadas | Marcelo |
-
-### 1.3. Customizações e Integrações Internas
-| Produto | Tecnologia | Descrição | Ponto Focal |
-| :--- | :--- | :--- | :--- |
-| **Integrador Acad.** | [`app-academico`](https://github.com/uniarpdev/app-academico) | Automação de processos RM (Console) | Marcelo |
-| **GrupoA (Manager)** | [`app-portal-mvc`](https://github.com/uniarpdev/app-portal-mvc) | Sincronismo LXP -> RM (Portal) | Marcelo |
-| **GrupoA (Avalia)** | .NET Framework | Integração antiga Avalia -> RM | Marcelo |
-| **Biblioteca Dig.** | `Minha Biblioteca` (PHP) | Sincronismo de usuários RM -> Grupo A | Marcelo |
-| **Módulo Valorizza**| Integração (Portal) | Integração Valorizza (Reside no Portal) | Marcelo |
-| **Sincronismo AD** | Integração RM -> AD | Manutenção de usuários no Active Directory | Marcelo |
-| **Custom RM (Low)** | Fórmulas Visuais / SQL | Lógica interna e gatilhos do ERP | Marcelo |
-| **Processos BPM** | Fluig (Processos) | Fluxos de trabalho customizados (Ex: SAE, Compras) | Theo |
-| **Dashboards BI** | Power BI (Dashboards) | Painéis estratégicos desenvolvidos internamente |Thiago |
 
 ---
 
