@@ -27,17 +27,33 @@ Este documento consolida o mapeamento de ativos de tecnologia da Uniarp, separan
 | **Site Institucional** | WordPress | Site público uniarp.edu.br | Maia |
 
 ### 1.2. Funcionalidades - Portal de Ensino (MVC)
-*Detalhamento dos módulos e serviços disponíveis no portal unificado (Branch: unificacao).*
+*Segmentação granular dos serviços disponíveis no portal unificado (Branch: unificacao).*
 
-| Módulo | Funcionalidades Principais |
-| :--- | :--- |
-| **AVA (Ambiente Virtual)** | Integração de notas (Manager/LXP), acesso ao ambiente de aprendizagem e autenticação centralizada. |
-| **Acadêmico (Edu)** | Registro e controle de presença em sala de aula (Check-in Aula), consulta de horários e dados acadêmicos. |
-| **Integração de Dados** | Módulos de sincronismo entre o ERP TOTVS RM e sistemas parceiros (Grupo A, Valorizza, etc). |
-| **Recursos Humanos (RH)** | Portal de suporte ao colaborador e gestão de informações internas. |
-| **Gestão de Acesso** | Autenticação unificada e gerenciamento de permissões por perfil (Aluno, Professor, Gestor). |
+#### A. Módulo Acadêmico (Edu & Aluno)
+| Funcionalidade | Descrição | Público |
+| :--- | :--- | :--- |
+| **Check-in Aula** | Registro de presença via portal com validação de geolocalização/horário. | Aluno |
+| **Análise Curricular**| Emissão de relatórios de evolução no curso e matriz curricular. | Aluno |
+| **Aproveitamento** | Fluxo digital para solicitação e acompanhamento de aproveitamento de estudos. | Aluno |
+| **Gestão Acadêmica** | Consulta de notas, faltas, horários e documentos acadêmicos. | Aluno |
+| **Painel Coord.** | Visualização e gestão de professores e turmas vinculadas. | Coordenador |
+
+#### B. Módulo de Integrações (Middleware)
+| Funcionalidade | Descrição | Status |
+| :--- | :--- | :--- |
+| **Gateway AVA** | Ponte de autenticação e sincronismo para ambientes LXP/Moodle. | Ativo |
+| **Sync de Notas** | Motor de integração para retorno de avaliações externas ao TOTVS RM. | Ativo |
+| **Módulo Valorizza**| Integração de dados de carreira e práticas acadêmicas. | Em Unificação |
+
+#### C. Módulo de Suporte e Identidade
+| Funcionalidade | Descrição | Público |
+| :--- | :--- | :--- |
+| **Self-Service ID** | Reset de senha e atualização cadastral LDAP integrada ao portal. | Geral |
+| **Central de RH** | Consultas administrativas e suporte ao colaborador. | Funcionário |
+| **Gestão de Perfil** | Controle granular de acesso baseado em papéis (RBAC). | Sistema |
 
 ### 1.3. Ecossistema de Integrações Internas
+
 *Fluxos de sincronismo e comunicação desenvolvidos pela equipe.*
 
 | Produto | Tecnologia | Descrição | Ponto Focal |
