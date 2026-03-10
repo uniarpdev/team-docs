@@ -14,6 +14,7 @@ Acreditamos que o sucesso de um time de desenvolvimento depende de uma estrutura
 ## 📋 Principais Documentos
 
 *   [📅 **Gestão de Demandas**](gestao-demandas.md): Como organizamos o Planner e o GLPI para manter o foco nas entregas anuais e de projetos.
+*   [🌿 **Padrões Git**](desenvolvimento-git.md): Regras de branching e organização do histórico de commits baseadas em prefixos.
 *   [📋 **Fluxo de Atendimento**](fluxo-atendimento.md): Definição de níveis de suporte (N1, N2, N3) e matriz de responsabilidades (RACI).
 *   [🚀 **Projetos Futuros**](projetos-futuros.md): Visão de médio e longo prazo para novas tecnologias e ritos ágeis.
 

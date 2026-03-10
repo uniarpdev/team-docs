@@ -2,5 +2,6 @@
 - [👥 Equipe e Responsabilidades](integracao/equipe.md)
 - [🛠️ Mapa de Ferramentas](projetos/ferramentas.md)
 - [📋 Processo de Atendimento](processos/fluxo-atendimento.md)
+- [🌿 Padrões Git](processos/desenvolvimento-git.md)
 - [📅 Gestão de Demandas](processos/gestao-demandas.md)
 - [🚀 Projetos Futuros](processos/projetos-futuros.md)
